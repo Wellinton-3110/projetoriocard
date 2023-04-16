@@ -11,7 +11,7 @@ import { GTEcadastramento } from "./pages/EspecialPages/GTEcadastramento";
 import { GTEandamento } from "./pages/EspecialPages/GTEandamento";
 import { GTEvencido } from "./pages/EspecialPages/GTEvencido";
 import { GTVagendamentoComAcao } from "./pages/ValeSocialPages/GTVagendamentoComAcao";
-import { GTVagendamentoSemAcao } from "./pages/ValeSocialPages/GTvagendamentoSemAcao";
+import { GTVagendamentoSemAcao } from "./pages/ValeSocialPages/GTVagendamentoSemAcao";
 import { GTVcadastramento } from "./pages/ValeSocialPages/GTVcadastramento";
 import { GTVcancelamento } from "./pages/ValeSocialPages/GTVcancelamento";
 import { GTVandamento } from "./pages/ValeSocialPages/GTVandamento";
