@@ -1,0 +1,48 @@
+.App {
+  font-family: sans-serif;
+  background-color: transparent;
+}
+.mainUl {
+  display: flex;
+}
+
+.bgScript {
+  background-image: url("../assets/bgPage2.svg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      to top,
+      rgba(25, 199, 45, 0.522),
+      rgb(255, 255, 255)
+    ),
+    url("../assets/bgPage2.svg");
+}
+
+.bgHome {
+  background-image: url("../assets/bgPage2.svg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      to top,
+      rgba(155, 219, 227, 0.705),
+      rgb(253, 252, 252)
+    ),
+    url("../assets/bgPage2.svg");
+}
+
+.textAp {
+  animation: front 4s alternate infinite;
+}
+
+@keyframes front {
+  0% {
+    transform: translateY(1px);
+  }
+  100% {
+    transform: translateY(3px);
+  }
+}
