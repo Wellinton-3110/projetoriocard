@@ -233,35 +233,35 @@ export function Gt() {
 
               <li className="flex items-center justify-center [font-size:13px]">
                 <Link className="relative w-[95px] ml-1 text-zinc-700">
-                  fdgdfgdfgd
+                  1368
                 </Link>
                 <BsFillArrowRightCircleFill className="relative text-zinc-700" />
               </li>
 
               <li className="flex items-center justify-center [font-size:13px]">
                 <Link className="relative w-[95px] ml-1 text-zinc-700">
-                  dfgdfgdgf
+                  Descancelar
                 </Link>
                 <BsFillArrowRightCircleFill className="relative text-zinc-700" />
               </li>
 
               <li className="flex items-center justify-center [font-size:13px]">
                 <Link className="relative w-[95px] ml-1 text-zinc-700">
-                  dfgdfgdg
+                  Antifraude
                 </Link>
                 <BsFillArrowRightCircleFill className="relative text-zinc-700" />
               </li>
 
               <li className="flex items-center justify-center [font-size:13px]">
                 <Link className="relative w-[95px] ml-1 text-zinc-700">
-                  Vencimendfgdfgdfgto
+                  Vencido
                 </Link>
                 <BsFillArrowRightCircleFill className="relative text-zinc-700" />
               </li>
 
               <li className="flex items-center justify-center [font-size:13px]">
                 <Link className="relative w-[95px] ml-1 text-zinc-700">
-                  dfgdfgd
+                  Fora do padrão
                 </Link>
                 <BsFillArrowRightCircleFill className="relative text-zinc-700" />
               </li>

@@ -20,6 +20,20 @@
     url("../assets/bgPage2.svg");
 }
 
+.bgScriptEx {
+  background-image: url("../assets/bgPage2.svg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      to top,
+      #c313ace8,
+      rgba(230, 62, 143, 0.531)
+    ),
+    url("../assets/bgPage2.svg");
+}
+
 .bgHome {
   background-image: url("../assets/bgPage2.svg");
   background-size: cover;

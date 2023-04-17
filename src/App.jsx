@@ -17,6 +17,8 @@ import { GTVcancelamento } from "./pages/ValeSocialPages/GTVcancelamento";
 import { GTVandamento } from "./pages/ValeSocialPages/GTVandamento";
 import { GTVrevalidacaoApv } from "./pages/ValeSocialPages/GTVrevalidacaoApv";
 import { GTVrevalidacaoAnd } from "./pages/ValeSocialPages/GTVrevalidacaoAnd";
+import { EXativacaoBui } from "./pages/ExpressoPages/EXativacaoBui";
+import { EXcancelamento } from "./pages/ExpressoPages/EXcancelamento";
 
 export function App() {
   return (
@@ -58,6 +60,8 @@ export function App() {
         <Route path="/GTVandamento" element={<GTVandamento />} />
         <Route path="/GTVrevalidacaoApv" element={<GTVrevalidacaoApv />} />
         <Route path="/GTVrevalidacaoAnd" element={<GTVrevalidacaoAnd />} />
+        <Route path="/EXativacaoBui" element={<EXativacaoBui />} />
+        <Route path="/EXcancelamento" element={<EXcancelamento />} />
       </Routes>
     </BrowserRouter>
   );
