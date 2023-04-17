@@ -38,7 +38,7 @@ export function NavBar() {
             EX
             <ul
               id="ulEX"
-              className=" absolute bg-zinc-200 [z-index:2] max-h-[143.5px] cursor-default top-[137%] right-0 border-[1px] border-[black] p-3 font-light text-[15px]"
+              className="hidden absolute bg-zinc-200 [z-index:2] max-h-[143.5px] cursor-default top-[137%] right-0 border-[1px] border-[black] p-3 font-light text-[15px]"
               onClick={(e) => e.stopPropagation()}
             >
               <li className="hover:border-b-[1px] text-zinc-700 border-black cursor-pointer mb-1">
