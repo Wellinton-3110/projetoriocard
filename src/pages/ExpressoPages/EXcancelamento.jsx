@@ -6,7 +6,7 @@ export function EXcancelamento() {
   const title = "Cancelamento";
   const script = `Cliente solicita cancelamento de cartão "EXPRESSO" por motivo de (), foi verificado que cartão está associado a ele como usuário. Cancelamento feito com sucesso. Segue dados:`;
 
-  const path = "SERVIÇO / USUÁRIO / VT / CARTÃO / CANCELAR / NA / NA";
+  const path = "SERVIÇO | USUÁRIO | VT | CARTÃO | CANCELAR | NA | NA";
   return (
     <div className="h-[100vh] w-[100vw]">
       <NavBar />

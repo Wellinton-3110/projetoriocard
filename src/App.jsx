@@ -19,12 +19,17 @@ import { GTVrevalidacaoApv } from "./pages/ValeSocialPages/GTVrevalidacaoApv";
 import { GTVrevalidacaoAnd } from "./pages/ValeSocialPages/GTVrevalidacaoAnd";
 import { EXativacaoBui } from "./pages/ExpressoPages/EXativacaoBui";
 import { EXcancelamento } from "./pages/ExpressoPages/EXcancelamento";
+import { EXcancelamentoDisponivel } from "./pages/ExpressoPages/EXcancelamentoDisponivel";
+import { EXsuspensoSetrans } from "./pages/ExpressoPages/EXsuspensoSetrans";
+import { EXbolsaGerada } from "./pages/ExpressoPages/EXbolsaGerada";
+import { EXbolsaPendente } from "./pages/ExpressoPages/EXbolsaPendente";
 
 export function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route exact path="/projectriocard/" element={<HomePage />} />
+        {/*____________________________GT___________________________*/}
         <Route path="/GTScadastramento" element={<GTScadastramento />} />
         <Route path="/GTSagendamento" element={<GTSagendamento />} />
         <Route
@@ -52,16 +57,21 @@ export function App() {
           path="/GTVagendamentoSemAcao"
           element={<GTVagendamentoSemAcao />}
         />
-
         <Route path="/GTVcadastramento" element={<GTVcadastramento />} />
-
         <Route path="/GTVcancelamento" element={<GTVcancelamento />} />
-
         <Route path="/GTVandamento" element={<GTVandamento />} />
         <Route path="/GTVrevalidacaoApv" element={<GTVrevalidacaoApv />} />
         <Route path="/GTVrevalidacaoAnd" element={<GTVrevalidacaoAnd />} />
+        {/*____________________________EX___________________________*/}
         <Route path="/EXativacaoBui" element={<EXativacaoBui />} />
         <Route path="/EXcancelamento" element={<EXcancelamento />} />
+        <Route
+          path="/EXcancelamentoDisponivel"
+          element={<EXcancelamentoDisponivel />}
+        />
+        <Route path="/EXsuspensoSetrans" element={<EXsuspensoSetrans />} />
+        <Route path="/EXbolsaGerada" element={<EXbolsaGerada />} />
+        <Route path="/EXbolsaPendente" element={<EXbolsaPendente />} />
       </Routes>
     </BrowserRouter>
   );

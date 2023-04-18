@@ -60,3 +60,32 @@ export function bloqueiosMenu() {
   ulValeSocial.classList.add("hidden");
   ulBloqueios.classList.toggle("hidden");
 }
+
+{
+  /*-------------------------------------------EXPRESSO-------------------------------------------*/
+}
+
+export function hideCancelamento() {
+  const ulCancelamento = document.getElementById("ulCancelamento");
+  const ulBui = document.getElementById("ulBui");
+  const ulBolsa = document.getElementById("ulBolsa");
+  ulBolsa.classList.add("hidden");
+  ulBui.classList.add("hidden");
+  ulCancelamento.classList.toggle("hidden");
+}
+export function hideBui() {
+  const ulBui = document.getElementById("ulBui");
+  const ulCancelamento = document.getElementById("ulCancelamento");
+  const ulBolsa = document.getElementById("ulBolsa");
+  ulCancelamento.classList.add("hidden");
+  ulBolsa.classList.add("hidden");
+  ulBui.classList.toggle("hidden");
+}
+export function hideBolsa() {
+  const ulBolsa = document.getElementById("ulBolsa");
+  const ulCancelamento = document.getElementById("ulCancelamento");
+  const ulBui = document.getElementById("ulBui");
+  ulBui.classList.add("hidden");
+  ulCancelamento.classList.add("hidden");
+  ulBolsa.classList.toggle("hidden");
+}

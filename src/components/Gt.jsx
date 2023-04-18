@@ -20,7 +20,7 @@ export function Gt() {
         GT
         <ul
           id="ulGT"
-          className="absolute bg-zinc-200 [z-index:2] max-h-[143.5px] w-[105px] cursor-default top-[145%] right-[-80%] border-[1px] border-[black] p-3 hidden"
+          className="absolute bg-zinc-200 [z-index:2] w-[130px] max-h-[143.5px] w-[105px] cursor-default top-[137%] right-[-80%] border-[1px] border-[black] p-3 hidden"
           onClick={(e) => e.stopPropagation()}
         >
           <li
