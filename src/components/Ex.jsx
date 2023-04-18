@@ -16,7 +16,7 @@ export function Ex() {
         EX
         <ul
           id="ulEX"
-          className="hidden absolute bg-zinc-200 [z-index:2] w-[130px] max-h-[143.5px] cursor-default top-[137%] right-0 border-[1px] border-[black] p-3 font-light text-[15px]"
+          className="hidden absolute bg-zinc-200 [z-index:2] w-[145px] max-h-[143.5px] cursor-default top-[137%] right-0 border-[1px] border-[black] p-3 font-light text-[15px]"
           onClick={(e) => e.stopPropagation()}
         >
           <li
@@ -71,10 +71,7 @@ export function Ex() {
               </li>
 
               <li className="flex items-center justify-center [font-size:13px]">
-                <Link
-                  to="/EXsuspensoSetrans"
-                  className="relative w-[95px] ml-1"
-                >
+                <Link to="/EXbolsaNgerada" className="relative w-[95px] ml-1">
                   Não gerada
                 </Link>
                 <BsFillArrowRightCircleFill className="relative ml-2" />

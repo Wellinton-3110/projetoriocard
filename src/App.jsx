@@ -23,6 +23,7 @@ import { EXcancelamentoDisponivel } from "./pages/ExpressoPages/EXcancelamentoDi
 import { EXsuspensoSetrans } from "./pages/ExpressoPages/EXsuspensoSetrans";
 import { EXbolsaGerada } from "./pages/ExpressoPages/EXbolsaGerada";
 import { EXbolsaPendente } from "./pages/ExpressoPages/EXbolsaPendente";
+import { EXbolsaNgerada } from "./pages/ExpressoPages/EXbolsaNgerada";
 
 export function App() {
   return (
@@ -72,6 +73,7 @@ export function App() {
         <Route path="/EXsuspensoSetrans" element={<EXsuspensoSetrans />} />
         <Route path="/EXbolsaGerada" element={<EXbolsaGerada />} />
         <Route path="/EXbolsaPendente" element={<EXbolsaPendente />} />
+        <Route path="/EXbolsaNgerada" element={<EXbolsaNgerada />} />
       </Routes>
     </BrowserRouter>
   );
