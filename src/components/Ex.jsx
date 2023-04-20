@@ -114,7 +114,7 @@ export function Ex() {
             Recargas
             <ul
               id="ulRecargas"
-              className=" absolute left-[103%] w-[135px] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[3px] cursor-pointer bg-zinc-200"
+              className="hidden absolute left-[103%] w-[135px] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[3px] cursor-pointer bg-zinc-200"
             >
               <li className="flex items-center justify-center [font-size:13px]">
                 <Link

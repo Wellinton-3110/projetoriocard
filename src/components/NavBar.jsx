@@ -41,7 +41,7 @@ export function NavBar() {
             VT
             <ul
               id="ulVT"
-              className="  absolute bg-zinc-200 [z-index:2] max-h-[143.5px] cursor-default top-[144%] left-0 border-[1px] border-[black] p-3 font-light text-[15px]"
+              className=" hidden absolute bg-zinc-200 [z-index:2] max-h-[143.5px] cursor-default top-[144%] left-0 border-[1px] border-[black] p-3 font-light text-[15px]"
               onClick={(e) => e.stopPropagation()}
             >
               <li
@@ -51,7 +51,7 @@ export function NavBar() {
                 BUI
                 <ul
                   id="ulBuiVT"
-                  className="absolute right-[103%] w-[135px] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[3px] cursor-pointer bg-zinc-200"
+                  className="hidden absolute right-[103%] w-[135px] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[3px] cursor-pointer bg-zinc-200"
                 >
                   <li className="flex items-center justify-center [font-size:13px]">
                     <BsFillArrowLeftCircleFill className="relative mr-2 " />
