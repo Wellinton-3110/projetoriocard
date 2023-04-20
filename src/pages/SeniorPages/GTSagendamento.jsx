@@ -4,7 +4,7 @@ import { Footer } from "../../components/Footer";
 export function GTSagendamento() {
   const title = "Agendamento";
   const script =
-    "Cliente solicita agendamento para foto de cartão sênior na base  . Procedimento realizado com sucesso. Segue dados:";
+    "Cliente solicita agendamento para foto de cartão sênior na base. Procedimento realizado com sucesso. Segue dados:";
   const path = "SERVICO | SENIOR | AGENDAMENTO DE FOTO/1 VIA";
   return (
     <div className="h-[100vh] w-[100vw]">

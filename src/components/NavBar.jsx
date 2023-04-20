@@ -5,6 +5,7 @@ import { HomePath } from "./HomePath";
 import { Gt } from "./Gt";
 import { Ex } from "./Ex";
 import { Link } from "react-router-dom";
+import { hideBui, hideBuiVT, hideVT } from "../functions/function";
 
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import { BsFillArrowLeftCircleFill } from "react-icons/bs";
@@ -32,20 +33,32 @@ export function NavBar() {
         <Gt />
         <Ex />
 
-        <ul id="ulVT" className="flex items-center justify-center p-2 w-[15vw]">
+        <ul
+          onClick={hideVT}
+          className="flex items-center justify-center p-2 w-[15vw]"
+        >
           <li className="border-solid absolute border-[2px] border-[#f37032] bg-white p-[5px] cursor-pointer rounded-[21%] text-[#f37032] text-[27px] font-medium hover:border-[3px]">
             VT
             <ul
               id="ulVT"
-              className=" hidden absolute bg-zinc-200 [z-index:2] max-h-[143.5px] cursor-default top-[144%] left-0 border-[1px] border-[black] p-3 font-light text-[15px]"
+              className="  absolute bg-zinc-200 [z-index:2] max-h-[143.5px] cursor-default top-[144%] left-0 border-[1px] border-[black] p-3 font-light text-[15px]"
               onClick={(e) => e.stopPropagation()}
             >
-              <li className="hover:border-b-[1px] text-zinc-700 border-black cursor-pointer mb-1">
+              <li
+                onClick={hideBuiVT}
+                className="hover:border-b-[1px] text-zinc-700 border-black cursor-pointer mb-1"
+              >
                 BUI
-                <ul className="absolute right-[103%] w-[135px] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[3px] cursor-pointer bg-zinc-200">
+                <ul
+                  id="ulBuiVT"
+                  className="absolute right-[103%] w-[135px] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[3px] cursor-pointer bg-zinc-200"
+                >
                   <li className="flex items-center justify-center [font-size:13px]">
                     <BsFillArrowLeftCircleFill className="relative mr-2 " />
-                    <Link to="" className="relative w-[95px] ml-1">
+                    <Link
+                      to="/VTativacaoBui"
+                      className="relative w-[95px] ml-1"
+                    >
                       Ativação
                     </Link>
                   </li>
@@ -53,7 +66,7 @@ export function NavBar() {
                   <li className="flex items-center justify-center [font-size:13px]">
                     <BsFillArrowLeftCircleFill className="relative mr-2 " />
                     <Link
-                      to="/projectriocard/"
+                      to="/VTsuspensoSetrans"
                       className="relative w-[95px] ml-1"
                     >
                       Suspenso Setrans
@@ -67,7 +80,7 @@ export function NavBar() {
               </li>
 
               <Link
-                to="/"
+                to=""
                 className="hover:border-b-[1px] text-zinc-700 border-black cursor-pointer mb-1 block"
               >
                 Cancelamento

@@ -24,6 +24,11 @@ import { EXsuspensoSetrans } from "./pages/ExpressoPages/EXsuspensoSetrans";
 import { EXbolsaGerada } from "./pages/ExpressoPages/EXbolsaGerada";
 import { EXbolsaPendente } from "./pages/ExpressoPages/EXbolsaPendente";
 import { EXbolsaNgerada } from "./pages/ExpressoPages/EXbolsaNgerada";
+import { EXrecargaEfetuada } from "./pages/ExpressoPages/EXrecargaEfetuada";
+import { EXrecargaPendente } from "./pages/ExpressoPages/EXrecargaPendente";
+import { EXrecargaPresa } from "./pages/ExpressoPages/EXrecargaPresa";
+import { VTativacaoBui } from "./pages/ValeTransportePages/VTativacaoBui";
+import { VTsuspensoSetrans } from "./pages/ValeTransportePages/VTsuspensoSetrans";
 
 export function App() {
   return (
@@ -74,6 +79,12 @@ export function App() {
         <Route path="/EXbolsaGerada" element={<EXbolsaGerada />} />
         <Route path="/EXbolsaPendente" element={<EXbolsaPendente />} />
         <Route path="/EXbolsaNgerada" element={<EXbolsaNgerada />} />
+        <Route path="/EXrecargaEfetuada" element={<EXrecargaEfetuada />} />
+        <Route path="/EXrecargaPendente" element={<EXrecargaPendente />} />
+        <Route path="/EXrecargaPresa" element={<EXrecargaPresa />} />
+        {/*____________________________VT___________________________*/}
+        <Route path="/VTativacaoBui" element={<VTativacaoBui />} />
+        <Route path="/VTsuspensoSetrans" element={<VTsuspensoSetrans />} />
       </Routes>
     </BrowserRouter>
   );

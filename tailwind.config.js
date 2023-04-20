@@ -18,7 +18,7 @@ export default {
       sm: { max: "480px" },
       // => @media (max-width: 639px) { ... }
 
-      tall: { raw: "(max-height: 880px)" },
+      tall: { raw: "(max-height: 770px)" },
       // => @media (min-height: 800px) { ... }
     },
     extend: {},
