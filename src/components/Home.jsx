@@ -6,7 +6,7 @@ import { AiOutlineCopy } from "react-icons/ai";
 export function Home() {
   return (
     <div className="w-full h-[75.5vh] bg-white/10 flex">
-      <div className="bgHome w-[69vw] h-[67vh] m-auto text-center border-[3px] border-t-[1px] relative border-black/90 rounded-md p-3">
+      <div className="bgHome w-[73vw] h-[67vh] m-auto text-center border-[3px] border-t-[1px] relative border-black/90 rounded-md p-3">
         {/*------------------------------------###-----------------------------------------*/}
         <div className="flex items-center mt-7 justify-center [font-size:25px]">
           <h1 className="md:text-[15px] ml-6 textAp [line-height:40px] [letter-spacing:1px]">

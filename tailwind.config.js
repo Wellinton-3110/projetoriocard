@@ -3,22 +3,22 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
-      "2xl": { max: "1535px" },
+      "2xl": { max: "1735px" },
       // => @media (max-width: 1535px) { ... }
 
-      xl: { max: "1279px" },
+      xl: { max: "1479px" },
       // => @media (max-width: 1279px) { ... }
 
-      lg: { max: "1023px" },
+      lg: { max: "1223px" },
       // => @media (max-width: 1023px) { ... }
 
-      md: { max: "767px" },
+      md: { max: "1020px" },
       // => @media (max-width: 767px) { ... }
 
       sm: { max: "480px" },
       // => @media (max-width: 639px) { ... }
 
-      tall: { raw: "(max-height: 770px)" },
+      tall: { raw: "(max-height: 900px)" },
       // => @media (min-height: 800px) { ... }
     },
     extend: {},

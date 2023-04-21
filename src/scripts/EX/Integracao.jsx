@@ -2,7 +2,7 @@ import "../../styles/index.css";
 import "../../styles/styles.css";
 import { AiOutlineCopy } from "react-icons/ai";
 
-export function BolsaNgerada(props) {
+export function Integracao(props) {
   async function copy() {
     const copyElement = document.getElementById("copy");
     const range = document.createRange();
@@ -28,21 +28,16 @@ export function BolsaNgerada(props) {
         <div className="flex flex-col items-center justify-center flex-1 ">
           <h1 className="ml-6 font-black [font-size:25px] [letter-spacing:1px] underline [line-height:40px] absolute top-5">
             {props.title}
-            <h3 className="text-[11px] font-light text-red-700 animate-pulse">
-              (*Abrir demanda somente com o titular)
-            </h3>
           </h1>
           <h2
             id="copy"
             className="font-bold [font-size:17px] [letter-spacing:3px] w-[450px] sm:w-[230px] sm:font-normal md:w-[330px]"
           >
-            {props.script}
-            <br />
-            <br />
             <p>NOME:</p>
             <p>CPF:</p>
-            <p>Nº DA ORDEM:</p>
-            <p>Nº DO CARTÃO CANCELADO:</p>
+            <p>CARTÃO:</p>
+            <br />
+            {props.script}
           </h2>
           <h3 className="absolute bottom-4">{props.path}</h3>
           <span

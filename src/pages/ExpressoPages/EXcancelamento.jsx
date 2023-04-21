@@ -3,7 +3,7 @@ import { Cancelamento } from "../../scripts/EX/Cancelamento";
 import { Footer } from "../../components/Footer";
 
 export function EXcancelamento() {
-  const title = "Cancelamento";
+  const title = "CANCELAMENTO";
   const script = `Cliente solicita cancelamento de cartão "EXPRESSO" por motivo de (), foi verificado que cartão está associado a ele como usuário. Cancelamento feito com sucesso. Segue dados:`;
 
   const path = "SERVIÇO | USUÁRIO | VT | CARTÃO | CANCELAR | NA | NA";

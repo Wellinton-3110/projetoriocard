@@ -27,6 +27,8 @@ import { EXbolsaNgerada } from "./pages/ExpressoPages/EXbolsaNgerada";
 import { EXrecargaEfetuada } from "./pages/ExpressoPages/EXrecargaEfetuada";
 import { EXrecargaPendente } from "./pages/ExpressoPages/EXrecargaPendente";
 import { EXrecargaPresa } from "./pages/ExpressoPages/EXrecargaPresa";
+import { EXintegracao } from "./pages/ExpressoPages/EXintegracao";
+import { EXnaoIntegracao } from "./pages/ExpressoPages/EXnaoIntegracao";
 import { VTativacaoBui } from "./pages/ValeTransportePages/VTativacaoBui";
 import { VTsuspensoSetrans } from "./pages/ValeTransportePages/VTsuspensoSetrans";
 
@@ -82,6 +84,8 @@ export function App() {
         <Route path="/EXrecargaEfetuada" element={<EXrecargaEfetuada />} />
         <Route path="/EXrecargaPendente" element={<EXrecargaPendente />} />
         <Route path="/EXrecargaPresa" element={<EXrecargaPresa />} />
+        <Route path="/EXintegracao" element={<EXintegracao />} />
+        <Route path="/EXnaoIntegracao" element={<EXnaoIntegracao />} />
         {/*____________________________VT___________________________*/}
         <Route path="/VTativacaoBui" element={<VTativacaoBui />} />
         <Route path="/VTsuspensoSetrans" element={<VTsuspensoSetrans />} />

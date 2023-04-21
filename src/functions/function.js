@@ -84,6 +84,8 @@ export function hideCancelamento() {
   const ulBui = document.getElementById("ulBui");
   const ulBolsa = document.getElementById("ulBolsa");
   const ulRecargas = document.getElementById("ulRecargas");
+  const ulIntegracao = document.getElementById("ulIntegracao");
+  ulIntegracao.classList.add("hidden");
   ulRecargas.classList.add("hidden");
   ulBolsa.classList.add("hidden");
   ulBui.classList.add("hidden");
@@ -94,6 +96,8 @@ export function hideBui() {
   const ulCancelamento = document.getElementById("ulCancelamento");
   const ulBolsa = document.getElementById("ulBolsa");
   const ulRecargas = document.getElementById("ulRecargas");
+  const ulIntegracao = document.getElementById("ulIntegracao");
+  ulIntegracao.classList.add("hidden");
   ulRecargas.classList.add("hidden");
   ulCancelamento.classList.add("hidden");
   ulBolsa.classList.add("hidden");
@@ -105,6 +109,8 @@ export function hideBolsa() {
   const ulCancelamento = document.getElementById("ulCancelamento");
   const ulBui = document.getElementById("ulBui");
   const ulRecargas = document.getElementById("ulRecargas");
+  const ulIntegracao = document.getElementById("ulIntegracao");
+  ulIntegracao.classList.add("hidden");
   ulRecargas.classList.add("hidden");
   ulBui.classList.add("hidden");
   ulCancelamento.classList.add("hidden");
@@ -116,10 +122,25 @@ export function hideRecargas() {
   const ulBolsa = document.getElementById("ulBolsa");
   const ulCancelamento = document.getElementById("ulCancelamento");
   const ulBui = document.getElementById("ulBui");
+  const ulIntegracao = document.getElementById("ulIntegracao");
+  ulIntegracao.classList.add("hidden");
   ulBui.classList.add("hidden");
   ulCancelamento.classList.add("hidden");
   ulBolsa.classList.add("hidden");
   ulRecargas.classList.toggle("hidden");
+}
+
+export function hideIntegracao() {
+  const ulIntegracao = document.getElementById("ulIntegracao");
+  const ulRecargas = document.getElementById("ulRecargas");
+  const ulBolsa = document.getElementById("ulBolsa");
+  const ulCancelamento = document.getElementById("ulCancelamento");
+  const ulBui = document.getElementById("ulBui");
+  ulBui.classList.add("hidden");
+  ulCancelamento.classList.add("hidden");
+  ulBolsa.classList.add("hidden");
+  ulRecargas.classList.add("hidden");
+  ulIntegracao.classList.toggle("hidden");
 }
 
 {

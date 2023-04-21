@@ -2,7 +2,7 @@ import "../../styles/index.css";
 import "../../styles/styles.css";
 import { AiOutlineCopy } from "react-icons/ai";
 
-export function RecargaPresa(props) {
+export function NaoIntegracao(props) {
   async function copy() {
     const copyElement = document.getElementById("copy");
     const range = document.createRange();
@@ -36,42 +36,31 @@ export function RecargaPresa(props) {
             id="copy"
             className="font-bold [font-size:17px] [letter-spacing:3px] w-[750px] sm:w-[230px] sm:font-normal md:w-[330px] tall:text-[10px] md:text-[12px] sm:text-[10px]"
           >
-            <div className="tall:absolute tall:top-10">
-              {props.script}
-              <br />
-              <br />
-              <p>Dados para abertura da ocorrência:</p>
-            </div>
-
+            {props.script}
+            <br />
+            <br />
+            <p>Dados para abertura da ocorrência:</p>
             <div className="flex flex-col text-left font-light text-[17px] [line-height:17px] tall:text-[10px] md:text-[12px] md:text-center sm:text-[10px]">
               <br />
               <br />
               <p>Nome do Usuário:</p>
               <p>Nº do CPF:</p>
               <p>Nº do Cartão:</p>
+              <p>Data e Horário da não integração:</p>
               <p>
                 -------------------------------------------------------------
               </p>
-              <p>Data e Horário da recarga:</p>
-              <p>Nº do terminal:</p>
-              <p>Local da recarga:</p>
-              <p>Valor da recarga:R$</p>
-              <p>
-                -------------------------------------------------------------
-              </p>
-
               <p>
                 Forma de Ressarcimento: (Recarga no cartão ou Conta Corrente/
                 Poupança)
               </p>
-
               <p>Banco:</p>
               <p>Agência:</p>
               <p>Conta:</p>
               <p>
                 -------------------------------------------------------------
               </p>
-              <p>Endereço</p>
+              <p>Endereço:</p>
               <p>Bairro:</p>
               <p>Município:</p>
               <p>Cep:</p>

@@ -1,6 +1,6 @@
 import "../styles/styles.css";
 import "../styles/index.css";
-import { hideEX, hideRecargas } from "../functions/function";
+import { hideEX, hideIntegracao, hideRecargas } from "../functions/function";
 import { Link } from "react-router-dom";
 import { hideCancelamento, hideBui, hideBolsa } from "../functions/function";
 
@@ -16,7 +16,7 @@ export function Ex() {
         EX
         <ul
           id="ulEX"
-          className="hidden absolute bg-zinc-200 [z-index:2] w-[145px] max-h-[143.5px] cursor-default top-[137%] right-0 border-[1px] border-[black] p-3 font-light text-[15px]"
+          className="hidden absolute bg-zinc-200 [z-index:2] w-[145px] max-h-[183.5px] cursor-default top-[137%] right-0 border-[1px] border-[black] p-3 font-light text-[15px]"
           onClick={(e) => e.stopPropagation()}
         >
           <li
@@ -101,6 +101,31 @@ export function Ex() {
                   className="relative w-[95px] ml-1"
                 >
                   Disponível
+                </Link>
+                <BsFillArrowRightCircleFill className="relative ml-2" />
+              </li>
+            </ul>
+          </li>
+
+          <li
+            onClick={hideIntegracao}
+            className="hover:border-b-[1px] text-zinc-700 border-black cursor-pointer mb-1 block"
+          >
+            Integrações
+            <ul
+              id="ulIntegracao"
+              className="hidden absolute left-[103%] w-[135px] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[3px] cursor-pointer bg-zinc-200"
+            >
+              <li className="flex items-center justify-center [font-size:13px]">
+                <Link to="/EXintegracao" className="relative w-[95px] ml-1">
+                  Informações
+                </Link>
+                <BsFillArrowRightCircleFill className="relative ml-2 " />
+              </li>
+
+              <li className="flex items-center justify-center [font-size:13px]">
+                <Link to="/EXnaoIntegracao" className="relative w-[95px] ml-1">
+                  Não integração
                 </Link>
                 <BsFillArrowRightCircleFill className="relative ml-2" />
               </li>
