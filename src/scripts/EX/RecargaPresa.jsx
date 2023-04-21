@@ -28,7 +28,7 @@ export function RecargaPresa(props) {
         <div className="flex flex-col items-center justify-center flex-1 h-[100%] ">
           <h1 className="ml-6 font-black [font-size:25px] text-center [letter-spacing:2px] underline [line-height:20px] absolute top-5 tall:absolute tall:top-0 tall:text-[12px] md:text-[14px] sm:text-[12px]">
             {props.title}
-            <h3 className="text-[11px] font-light text-red-700 mt-3 tall:mt-0 animate-bounce">
+            <h3 className="text-[11px] font-light text-red-700 mt-3 tall:mt-0 animate-bounce no-underline">
               (*Abrir demanda somente com o titular)
             </h3>
           </h1>
