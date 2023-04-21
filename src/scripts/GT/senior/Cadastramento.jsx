@@ -4,12 +4,23 @@ import { AiOutlineCopy } from "react-icons/ai";
 
 export function Cadastramento() {
   async function copy() {
-    const text = document.getElementById("copy").textContent;
+    const copyElement = document.getElementById("copy");
+    const range = document.createRange();
+    range.selectNode(copyElement);
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
 
-    await navigator.clipboard.writeText(text);
-    alert(
-      "texto copiado com sucesso, tecle CTRL + V na área desejada para colar"
-    );
+    try {
+      const successful = document.execCommand("copy");
+      const message = successful
+        ? "Texto copiado com sucesso!"
+        : "Falha ao copiar o texto.";
+      alert(message);
+    } catch (err) {
+      console.error("Erro ao copiar o texto:", err);
+    }
+
+    window.getSelection().removeAllRanges();
   }
   return (
     <div className="w-full h-[75.5vh] flex items-center justify-center overflow-hidden">
