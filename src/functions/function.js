@@ -149,5 +149,14 @@ export function hideIntegracao() {
 
 export function hideBuiVT() {
   const ulBuiVT = document.getElementById("ulBuiVT");
+  const ulCancelamentoVT = document.getElementById("ulCancelamentoVT");
+  ulCancelamentoVT.classList.add("hidden");
   ulBuiVT.classList.toggle("hidden");
+}
+
+export function hideCancelamentoVT() {
+  const ulCancelamentoVT = document.getElementById("ulCancelamentoVT");
+  const ulBuiVT = document.getElementById("ulBuiVT");
+  ulBuiVT.classList.add("hidden");
+  ulCancelamentoVT.classList.toggle("hidden");
 }

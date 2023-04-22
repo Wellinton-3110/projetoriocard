@@ -31,7 +31,7 @@ export function SuspensoSetrans(props) {
           </h1>
           <h2
             id="copy"
-            className="font-bold [font-size:16px] [letter-spacing:4px] w-[450px] sm:w-[230px] sm:font-normal md:w-[330px]"
+            className="font-bold [font-size:16px] [letter-spacing:4px] w-[450px] sm:w-[230px] tall:text-[13px] sm:font-normal md:w-[330px]"
           >
             <p>NOME:</p>
             <p>CPF:</p>

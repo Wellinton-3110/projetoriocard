@@ -31,6 +31,8 @@ import { EXintegracao } from "./pages/ExpressoPages/EXintegracao";
 import { EXnaoIntegracao } from "./pages/ExpressoPages/EXnaoIntegracao";
 import { VTativacaoBui } from "./pages/ValeTransportePages/VTativacaoBui";
 import { VTsuspensoSetrans } from "./pages/ValeTransportePages/VTsuspensoSetrans";
+import { VTcancelamento } from "./pages/ValeTransportePages/VTcancelamento";
+import { VTcancelamentoDisponivel } from "./pages/ValeTransportePages/VTcancelamentoDisponivel";
 
 export function App() {
   return (
@@ -89,6 +91,11 @@ export function App() {
         {/*____________________________VT___________________________*/}
         <Route path="/VTativacaoBui" element={<VTativacaoBui />} />
         <Route path="/VTsuspensoSetrans" element={<VTsuspensoSetrans />} />
+        <Route path="/VTcancelamento" element={<VTcancelamento />} />
+        <Route
+          path="/VTcancelamentoDisponivel"
+          element={<VTcancelamentoDisponivel />}
+        />
       </Routes>
     </BrowserRouter>
   );

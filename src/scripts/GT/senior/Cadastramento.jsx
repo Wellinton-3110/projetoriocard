@@ -31,7 +31,7 @@ export function Cadastramento() {
           </h1>
           <h2
             id="copy"
-            className="font-bold [font-size:17px] [letter-spacing:3px] w-[450px] sm:w-[230px] sm:font-normal md:w-[330px]"
+            className="font-bold [font-size:17px] [letter-spacing:3px] w-[450px] sm:w-[230px] tall:text-[13px] sm:font-normal md:w-[330px]"
           >
             Cliente solicita cadastramento sênior na base e agendamento para
             foto. Procedimento realizado com sucesso. Segue dados:

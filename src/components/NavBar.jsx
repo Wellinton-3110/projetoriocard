@@ -5,7 +5,12 @@ import { HomePath } from "./HomePath";
 import { Gt } from "./Gt";
 import { Ex } from "./Ex";
 import { Link } from "react-router-dom";
-import { hideBui, hideBuiVT, hideVT } from "../functions/function";
+import {
+  hideBui,
+  hideBuiVT,
+  hideVT,
+  hideCancelamentoVT,
+} from "../functions/function";
 
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import { BsFillArrowLeftCircleFill } from "react-icons/bs";
@@ -79,16 +84,40 @@ export function NavBar() {
                 Compra
               </li>
 
-              <Link
-                to=""
+              <li
+                onClick={hideCancelamentoVT}
                 className="hover:border-b-[1px] text-zinc-700 border-black cursor-pointer mb-1 block"
               >
                 Cancelamento
-              </Link>
+                <ul
+                  id="ulCancelamentoVT"
+                  className="hidden absolute right-[103%] w-[135px] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[3px] cursor-pointer bg-zinc-200"
+                >
+                  <li className="flex items-center justify-center [font-size:13px]">
+                    <BsFillArrowLeftCircleFill className="relative mr-2 " />
+                    <Link
+                      to="/VTcancelamento"
+                      className="relative w-[95px] ml-1"
+                    >
+                      Associado
+                    </Link>
+                  </li>
 
-              <Link className="hover:border-b-[1px] text-zinc-700 border-black cursor-pointer mb-1">
+                  <li className="flex items-center justify-center [font-size:13px]">
+                    <BsFillArrowLeftCircleFill className="relative mr-2 " />
+                    <Link
+                      to="/VTcancelamentoDisponivel"
+                      className="relative w-[95px] ml-1"
+                    >
+                      Disponível
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+
+              <li className="hover:border-b-[1px] text-zinc-700 border-black cursor-pointer mb-1">
                 Bloqueios
-              </Link>
+              </li>
             </ul>
           </li>
         </ul>

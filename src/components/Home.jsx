@@ -8,7 +8,7 @@ export function Home() {
     <div className="w-full h-[75.5vh] bg-white/10 flex">
       <div className="bgHome w-[73vw] h-[67vh] m-auto text-center border-[3px] border-t-[1px] relative border-black/90 rounded-md p-3">
         {/*------------------------------------###-----------------------------------------*/}
-        <div className="flex items-center mt-7 justify-center [font-size:25px]">
+        <div className="flex items-center mt-7 justify-center [font-size:25px] tall:text-[21px]">
           <h1 className="md:text-[15px] ml-6 textAp [line-height:40px] [letter-spacing:1px]">
             Olá
             <br className="" /> seja bem vindo(a) ao site de Scripts Riocard,
@@ -21,7 +21,7 @@ export function Home() {
         </div>
         {/*-----------------------------------###-----------------------------------------*/}
 
-        <footer className="md:text-[15px] relative mt-5 [font-size:21px] [letter-spacing:2px]">
+        <footer className="md:text-[15px] relative mt-5 [font-size:21px] [letter-spacing:2px] tall:text-[17px]">
           ...
           <br />
           <br />
