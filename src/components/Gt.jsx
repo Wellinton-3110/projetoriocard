@@ -66,204 +66,209 @@ export function Gt() {
           </li>
 
           <li
-            className="hover:border-b-[0.5px] [font-size:15px] text-blue-500 border-black font-light text-[7px] mb-1"
+            className="hover:border-b-[0.5px] text-[15px] text-blue-500 border-black font-light mb-1"
             onClick={especialMenu}
           >
             Especial
             <ul
               id="ulEspecial"
-              className="hidden absolute left-[103%] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[3px] w-21 cursor-pointer bg-zinc-200"
+              className=" hidden absolute left-[103%] w-[170px] top-[-1%] border-[1px] border-zinc-700 p-2 pl-0 space-y-[3px] w-21 cursor-pointer bg-zinc-200"
             >
               {/*------------------------------------------------------------------------------*/}
 
               <li className="flex items-center justify-center [font-size:13px]">
                 <Link
                   to="/GTEagendamentoComAcao"
-                  className="relative w-[95px] ml-1 text-zinc-700"
+                  className="relative left-[-19px] w-[95px] text-zinc-700"
                 >
-                  AgendamentoCA
+                  AgendamentoCom/A
                 </Link>
-                <BsFillArrowRightCircleFill className="relative text-zinc-700" />
+                <BsFillArrowRightCircleFill className="absolute text-zinc-700 right-1" />
               </li>
 
               <li className="flex items-center justify-center [font-size:13px]">
                 <Link
                   to="/GTEagendamentoSemAcao"
-                  className="relative w-[95px] ml-1 text-zinc-700"
+                  className="relative left-[-19px] w-[95px] text-zinc-700"
                 >
-                  AgendamentoSA
+                  AgendamentoSem/A
                 </Link>
-                <BsFillArrowRightCircleFill className="relative text-zinc-700" />
+                <BsFillArrowRightCircleFill className="absolute text-zinc-700 right-1" />
               </li>
 
               <li className="flex items-center justify-center [font-size:13px]">
                 <Link
                   to="/GTEandamento"
-                  className="relative w-[95px] ml-1 text-zinc-700"
+                  className="relative left-[-19px] w-[95px] text-zinc-700"
                 >
-                  Andamento
+                  Andamento/Solicitação
                 </Link>
-                <BsFillArrowRightCircleFill className="relative text-zinc-700" />
+                <BsFillArrowRightCircleFill className="absolute text-zinc-700 right-1" />
               </li>
 
               <li className="flex items-center justify-center [font-size:13px]">
                 <Link
                   to="/GTEcancelamento"
-                  className="relative w-[95px] ml-1 text-zinc-700"
+                  className="relative left-[-19px] w-[95px] text-zinc-700"
                 >
                   Cancelamento
                 </Link>
-                <BsFillArrowRightCircleFill className="relative text-zinc-700" />
+                <BsFillArrowRightCircleFill className="absolute text-zinc-700 right-1" />
               </li>
 
               <li className="flex items-center justify-center [font-size:13px]">
                 <Link
                   to="/GTEcadastramento"
-                  className="relative w-[95px] ml-1 text-zinc-700"
+                  className="relative left-[-19px] w-[95px] text-zinc-700"
                 >
                   Cadastramento
                 </Link>
-                <BsFillArrowRightCircleFill className="relative text-zinc-700" />
+                <BsFillArrowRightCircleFill className="absolute text-zinc-700 right-1" />
               </li>
 
               <li className="flex items-center justify-center [font-size:13px]">
                 <Link
                   to="/GTEvencido"
-                  className="relative w-[95px] ml-1 text-zinc-700"
+                  className="relative left-[-19px] w-[95px] text-zinc-700"
                 >
-                  C/Vencido
+                  Cartão Vencido
                 </Link>
-                <BsFillArrowRightCircleFill className="relative text-zinc-700" />
+                <BsFillArrowRightCircleFill className="absolute text-zinc-700 right-1" />
               </li>
             </ul>
           </li>
           {/*------------------------------------------------------------------------------*/}
 
           <li
-            className="hover:border-b-[0.5px] [font-size:15px] text-[#76a714] border-black font-light text-[7px] mb-1"
+            className="hover:border-b-[0.5px] text-[#76a714] border-black font-light text-[15px] mb-1"
             onClick={valeSocialMenu}
           >
             Vale Social
             <ul
               id="ulValeSocial"
-              className="hidden absolute left-[103%] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[2px] w-21 cursor-pointer bg-zinc-200"
+              className=" hidden absolute left-[103%] w-[185px] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[2px] w-21 cursor-pointer bg-zinc-200"
             >
               {/*------------------------------------------------------------------------------*/}
 
               <li className="flex items-center justify-center [font-size:13px]">
                 <Link
                   to="/GTVagendamentoComAcao"
-                  className="relative w-[95px] ml-1 text-zinc-700"
+                  className="relative left-[0] w-[180px] ml-1 text-zinc-700"
                 >
-                  AgendamentoCA
+                  AgendamentoC/AÇÃO
                 </Link>
-                <BsFillArrowRightCircleFill className="relative text-zinc-700" />
+                <BsFillArrowRightCircleFill className="absolute text-zinc-700 right-1" />
               </li>
 
               <li className="flex items-center justify-center [font-size:13px]">
                 <Link
                   to="/GTVagendamentoSemAcao"
-                  className="relative w-[95px] ml-1 text-zinc-700"
+                  className="relative left-[0] w-[180px] ml-1 text-zinc-700"
                 >
-                  AgendamentoSA
+                  AgendamentoS/AÇÃO
                 </Link>
-                <BsFillArrowRightCircleFill className="relative text-zinc-700" />
+                <BsFillArrowRightCircleFill className="absolute text-zinc-700 right-1" />
               </li>
 
               <li className="flex items-center justify-center [font-size:13px]">
                 <Link
                   to="/GTVandamento"
-                  className="relative w-[95px] ml-1 text-zinc-700"
+                  className="relative left-[0] w-[180px] ml-1 text-zinc-700"
                 >
-                  Andamento
+                  Andamento/Solicitação
                 </Link>
-                <BsFillArrowRightCircleFill className="relative text-zinc-700" />
+                <BsFillArrowRightCircleFill className="absolute text-zinc-700 right-1" />
               </li>
 
               <li className="flex items-center justify-center [font-size:13px]">
                 <Link
                   to="/GTVcadastramento"
-                  className="relative w-[95px] ml-1 text-zinc-700"
+                  className="relative left-[0] w-[180px] ml-1 text-zinc-700"
                 >
                   Cadastramento
                 </Link>
-                <BsFillArrowRightCircleFill className="relative text-zinc-700" />
+                <BsFillArrowRightCircleFill className="absolute text-zinc-700 right-1" />
               </li>
 
               <li className="flex items-center justify-center [font-size:13px]">
                 <Link
                   to="/GTVcancelamento"
-                  className="relative w-[95px] ml-1 text-zinc-700"
+                  className="relative left-[0] w-[180px] ml-1 text-zinc-700"
                 >
                   Cancelamento
                 </Link>
-                <BsFillArrowRightCircleFill className="relative text-zinc-700" />
+                <BsFillArrowRightCircleFill className="absolute text-zinc-700 right-1" />
               </li>
               <li className="flex items-center justify-center [font-size:13px]">
                 <Link
                   to="/GTVrevalidacaoApv"
-                  className="relative w-[95px] ml-1 text-zinc-700"
+                  className="relative left-[0] w-[180px] ml-1 text-zinc-700"
                 >
-                  RevalidaçãoAPR
+                  Revalidação aprovada
                 </Link>
-                <BsFillArrowRightCircleFill className="relative text-zinc-700" />
+                <BsFillArrowRightCircleFill className="absolute text-zinc-700 right-1" />
               </li>
               <li className="flex items-center justify-center [font-size:13px]">
                 <Link
                   to="/GTVrevalidacaoAnd"
-                  className="relative w-[95px] ml-1 text-zinc-700"
+                  className="relative left-[0] w-[180px] ml-1 text-zinc-700"
                 >
-                  RevalidaçãoAND
+                  Revalidação em andamento
                 </Link>
-                <BsFillArrowRightCircleFill className="relative text-zinc-700" />
+                <BsFillArrowRightCircleFill className="absolute text-zinc-700 right-1" />
               </li>
             </ul>
           </li>
 
           <li
-            className="hover:border-b-[0.5px] [font-size:15px] text-black border-black font-light text-[7px] mb-1"
+            className="hover:border-b-[0.5px] text-black border-black font-light text-[15px] mb-1"
             onClick={bloqueiosMenu}
           >
             Bloqueios
             <ul
               id="ulBloqueios"
-              className="hidden absolute left-[103%] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[2px] w-21 cursor-pointer bg-zinc-200"
+              className=" hidden absolute left-[103%] w-[170px] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[2px] w-21 cursor-pointer bg-zinc-200"
             >
               {/*------------------------------------------------------------------------------*/}
 
               <li className="flex items-center justify-center [font-size:13px]">
-                <Link className="relative w-[95px] ml-1 text-zinc-700">
-                  1368
+                <Link
+                  to="/GTbloqueio1368"
+                  className="relative w-[130px] text-zinc-700"
+                >
+                  684 ou 1368 C/Cartão
                 </Link>
-                <BsFillArrowRightCircleFill className="relative text-zinc-700" />
+                <BsFillArrowRightCircleFill className="absolute right-1 text-zinc-700" />
               </li>
 
               <li className="flex items-center justify-center [font-size:13px]">
-                <Link className="relative w-[95px] ml-1 text-zinc-700">
+                <Link
+                  to="/GTbloqueio1368s"
+                  className="relative w-[130px] text-zinc-700"
+                >
+                  684 ou 1368 S/Cartão
+                </Link>
+                <BsFillArrowRightCircleFill className="absolute right-1 text-zinc-700" />
+              </li>
+
+              <li className="flex items-center justify-center [font-size:13px]">
+                <Link
+                  to="/GTbiometria"
+                  className="relative w-[130px] text-zinc-700"
+                >
+                  Biometria Irregular
+                </Link>
+                <BsFillArrowRightCircleFill className="absolute right-1 text-zinc-700" />
+              </li>
+
+              <li className="flex items-center justify-center [font-size:13px]">
+                <Link
+                  to="/GTdescancelar"
+                  className="relative w-[130px] text-zinc-700"
+                >
                   Descancelar
                 </Link>
-                <BsFillArrowRightCircleFill className="relative text-zinc-700" />
-              </li>
-
-              <li className="flex items-center justify-center [font-size:13px]">
-                <Link className="relative w-[95px] ml-1 text-zinc-700">
-                  Antifraude
-                </Link>
-                <BsFillArrowRightCircleFill className="relative text-zinc-700" />
-              </li>
-
-              <li className="flex items-center justify-center [font-size:13px]">
-                <Link className="relative w-[95px] ml-1 text-zinc-700">
-                  Vencido
-                </Link>
-                <BsFillArrowRightCircleFill className="relative text-zinc-700" />
-              </li>
-
-              <li className="flex items-center justify-center [font-size:13px]">
-                <Link className="relative w-[95px] ml-1 text-zinc-700">
-                  Fora do padrão
-                </Link>
-                <BsFillArrowRightCircleFill className="relative text-zinc-700" />
+                <BsFillArrowRightCircleFill className="absolute right-1 text-zinc-700" />
               </li>
             </ul>
           </li>

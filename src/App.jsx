@@ -17,6 +17,11 @@ import { GTVcancelamento } from "./pages/ValeSocialPages/GTVcancelamento";
 import { GTVandamento } from "./pages/ValeSocialPages/GTVandamento";
 import { GTVrevalidacaoApv } from "./pages/ValeSocialPages/GTVrevalidacaoApv";
 import { GTVrevalidacaoAnd } from "./pages/ValeSocialPages/GTVrevalidacaoAnd";
+import { GTbloqueio1368 } from "./pages/GTbloqueios/GTbloqueio1368";
+import { GTdescancelar } from "./pages/GTbloqueios/GTdescancelar";
+{
+  /*--------------------------------------------------------------------------------------*/
+}
 import { EXativacaoBui } from "./pages/ExpressoPages/EXativacaoBui";
 import { EXcancelamento } from "./pages/ExpressoPages/EXcancelamento";
 import { EXcancelamentoDisponivel } from "./pages/ExpressoPages/EXcancelamentoDisponivel";
@@ -29,10 +34,18 @@ import { EXrecargaPendente } from "./pages/ExpressoPages/EXrecargaPendente";
 import { EXrecargaPresa } from "./pages/ExpressoPages/EXrecargaPresa";
 import { EXintegracao } from "./pages/ExpressoPages/EXintegracao";
 import { EXnaoIntegracao } from "./pages/ExpressoPages/EXnaoIntegracao";
+{
+  /*--------------------------------------------------------------------------------------*/
+}
 import { VTativacaoBui } from "./pages/ValeTransportePages/VTativacaoBui";
 import { VTsuspensoSetrans } from "./pages/ValeTransportePages/VTsuspensoSetrans";
 import { VTcancelamento } from "./pages/ValeTransportePages/VTcancelamento";
 import { VTcancelamentoDisponivel } from "./pages/ValeTransportePages/VTcancelamentoDisponivel";
+import { VTbolsaGerada } from "./pages/ValeTransportePages/VTbolsaGerada";
+import { VTbolsaPendente } from "./pages/ValeTransportePages/VTbolsaPendente";
+import { VTbolsaNgerada } from "./pages/ValeTransportePages/VTbolsaNgerada";
+import { VTintegracao } from "./pages/ValeTransportePages/VTintegracao";
+import { VTnaoIntegracao } from "./pages/ValeTransportePages/VTnaoIntegracao";
 
 export function App() {
   return (
@@ -72,6 +85,8 @@ export function App() {
         <Route path="/GTVandamento" element={<GTVandamento />} />
         <Route path="/GTVrevalidacaoApv" element={<GTVrevalidacaoApv />} />
         <Route path="/GTVrevalidacaoAnd" element={<GTVrevalidacaoAnd />} />
+        <Route path="/GTbloqueio1368" element={<GTbloqueio1368 />} />
+        <Route path="/GTdescancelar" element={<GTdescancelar />} />
         {/*____________________________EX___________________________*/}
         <Route path="/EXativacaoBui" element={<EXativacaoBui />} />
         <Route path="/EXcancelamento" element={<EXcancelamento />} />
@@ -96,6 +111,11 @@ export function App() {
           path="/VTcancelamentoDisponivel"
           element={<VTcancelamentoDisponivel />}
         />
+        <Route path="/VTbolsaGerada" element={<VTbolsaGerada />} />
+        <Route path="/VTbolsaPendente" element={<VTbolsaPendente />} />
+        <Route path="/VTbolsaNgerada" element={<VTbolsaNgerada />} />
+        <Route path="/VTintegracao" element={<VTintegracao />} />
+        <Route path="/VTnaoIntegracao" element={<VTnaoIntegracao />} />
       </Routes>
     </BrowserRouter>
   );

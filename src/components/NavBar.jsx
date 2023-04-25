@@ -10,6 +10,8 @@ import {
   hideBuiVT,
   hideVT,
   hideCancelamentoVT,
+  hideBolsaVT,
+  hideIntegracaoVT,
 } from "../functions/function";
 
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
@@ -46,7 +48,7 @@ export function NavBar() {
             VT
             <ul
               id="ulVT"
-              className=" hidden absolute bg-zinc-200 [z-index:2] max-h-[143.5px] cursor-default top-[144%] left-0 border-[1px] border-[black] p-3 font-light text-[15px]"
+              className="hidden absolute bg-zinc-200 [z-index:2] w-[140px] max-h-[193.5px] cursor-default top-[144%] left-0 border-[1px] border-[black] p-3 font-light text-[15px]"
               onClick={(e) => e.stopPropagation()}
             >
               <li
@@ -81,7 +83,48 @@ export function NavBar() {
               </li>
 
               <li className="hover:border-b-[1px] text-zinc-700 border-black cursor-pointer mb-1">
-                Compra
+                Tarifa Social
+              </li>
+
+              <li
+                onClick={hideBolsaVT}
+                className="hover:border-b-[1px] text-zinc-700 border-black cursor-pointer mb-1"
+              >
+                Bolsa de Crédito
+                <ul
+                  id="ulBolsaVT"
+                  className="hidden absolute right-[103%] w-[135px] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[3px] cursor-pointer bg-zinc-200"
+                >
+                  <li className="flex items-center justify-center [font-size:13px]">
+                    <BsFillArrowLeftCircleFill className="relative mr-2 " />
+                    <Link
+                      to="/VTbolsaGerada"
+                      className="relative w-[95px] ml-1"
+                    >
+                      Gerada
+                    </Link>
+                  </li>
+
+                  <li className="flex items-center justify-center [font-size:13px]">
+                    <BsFillArrowLeftCircleFill className="relative mr-2" />
+                    <Link
+                      to="/VTbolsaPendente"
+                      className="relative w-[95px] ml-1"
+                    >
+                      Pendente
+                    </Link>
+                  </li>
+
+                  <li className="flex items-center justify-center [font-size:13px]">
+                    <BsFillArrowLeftCircleFill className="relative mr-2" />
+                    <Link
+                      to="/VTbolsaNgerada"
+                      className="relative w-[95px] ml-1"
+                    >
+                      Não gerada
+                    </Link>
+                  </li>
+                </ul>
               </li>
 
               <li
@@ -110,6 +153,34 @@ export function NavBar() {
                       className="relative w-[95px] ml-1"
                     >
                       Disponível
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+
+              <li
+                onClick={hideIntegracaoVT}
+                className="hover:border-b-[1px] text-zinc-700 border-black cursor-pointer mb-1 block"
+              >
+                Integrações
+                <ul
+                  id="ulIntegracaoVT"
+                  className=" hidden absolute right-[103%] w-[135px] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[3px] cursor-pointer bg-zinc-200"
+                >
+                  <li className="flex items-center justify-center [font-size:13px]">
+                    <BsFillArrowLeftCircleFill className="relative mr-2 " />
+                    <Link to="/VTintegracao" className="relative w-[95px] ml-1">
+                      Informações
+                    </Link>
+                  </li>
+
+                  <li className="flex items-center justify-center [font-size:13px]">
+                    <BsFillArrowLeftCircleFill className="relative mr-2" />
+                    <Link
+                      to="/VTnaoIntegracao"
+                      className="relative w-[95px] ml-1"
+                    >
+                      Não integração
                     </Link>
                   </li>
                 </ul>

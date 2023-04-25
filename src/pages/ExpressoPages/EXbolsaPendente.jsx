@@ -4,7 +4,7 @@ import { Footer } from "../../components/Footer";
 
 export function EXbolsaPendente() {
   const title = "Bolsa de Crédito Pendente";
-  const script = `Cliente solicita análise de bolsa de crédito no seu cartão expresso, ciente que a bolsa de crédito está pendente em sistema, dentro do prazo de 4 dias após a baixa do pagamento da ordem de cancelamento, orientado a aguardar o prazo.`;
+  const script = `Cliente solicita análise de bolsa de crédito no seu cartão expresso, ciente que a bolsa de crédito está pendente em sistema, orientado(a) a aguardar o prazo de 4 dias após a baixa do pagamento da ordem de cancelamento.`;
 
   const path = "INFORMACAO | USUARIO | EXPRESSO | BOLSA DE CREDITO";
   return (
