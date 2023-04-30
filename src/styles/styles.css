@@ -74,3 +74,16 @@
     transform: translateY(3px);
   }
 }
+
+.animateCard {
+  animation: animateCard 1s alternate ease-in;
+}
+
+@keyframes animateCard {
+  0% {
+    transform: translateX(180px);
+  }
+  from {
+    transform: translateX(100px);
+  }
+}

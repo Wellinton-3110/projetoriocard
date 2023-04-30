@@ -24,26 +24,26 @@ export function RecargaPresa(props) {
   }
   return (
     <div className="w-full h-[75.5vh] flex items-center justify-center overflow-hidden">
-      <div className="bgScriptEx overflow-hidden flex flex-col relative w-[75vw] h-[700px] m-auto text-center border-4 border-t-[1px] border-b-[8px] border-r-[5px] border-l-[6px] border-black/80 rounded-lg p-3 sm:h-[590px] md:h-[590px] sm:w-[350px] tall:h-[500px]">
+      <div className="animateCard bgScriptEx overflow-hidden flex flex-col relative w-[75vw] h-[69vh] m-auto text-center border-4 border-t-[1px] border-b-[8px] border-r-[5px] border-l-[6px] border-black/80 rounded-lg p-3 sm:h-[590px] md:h-[590px] sm:w-[350px] tall:h-[67vh]">
         <div className="flex flex-col items-center justify-center flex-1 h-[100%] ">
-          <h1 className="ml-6 font-black [font-size:25px] text-center [letter-spacing:2px] underline [line-height:20px] absolute top-5 tall:absolute tall:top-0 tall:text-[12px] md:text-[14px] sm:text-[12px]">
+          <h1 className="ml-6 font-black [font-size:21px] text-center [letter-spacing:2px] underline [line-height:20px] absolute top-4 tall:absolute tall:top-0 tall:text-[12px] md:text-[14px] sm:text-[12px]">
             {props.title}
-            <h3 className="text-[11px] font-light text-red-700 mt-3 tall:mt-0 animate-bounce no-underline">
+            <h3 className="text-[10px] font-light text-red-700 mt-3 tall:mt-0 animate-bounce no-underline">
               (*Abrir demanda somente com o titular)
             </h3>
           </h1>
           <h2
             id="copy"
-            className="font-bold [font-size:17px] [letter-spacing:3px] w-[750px] sm:w-[230px] sm:font-normal md:w-[330px] tall:text-[10px] md:text-[12px] sm:text-[10px]"
+            className="absolute top-[8vh] font-bold [font-size:12px] [letter-spacing:3px] w-[750px] sm:w-[230px] sm:font-normal md:w-[330px] tall:text-[10px] md:text-[10px] sm:text-[8px]"
           >
-            <div className="tall:absolute tall:top-10">
+            <div className="">
               {props.script}
               <br />
               <br />
               <p>Dados para abertura da ocorrência:</p>
             </div>
 
-            <div className="flex flex-col text-left font-light text-[17px] [line-height:17px] tall:text-[10px] md:text-[12px] md:text-center sm:text-[10px]">
+            <div className="flex flex-col text-left font-light text-[10px] [line-height:15px] tall:text-[8px] md:text-[8px] md:text-center sm:text-[7px]">
               <br />
               <br />
               <p>Nome do Usuário:</p>

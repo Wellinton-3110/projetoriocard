@@ -1,6 +1,11 @@
 import "../styles/styles.css";
 import "../styles/index.css";
-import { hideEX, hideIntegracao, hideRecargas } from "../functions/function";
+import {
+  hideEX,
+  hideIntegracao,
+  hideRecargas,
+  hideTsocial,
+} from "../functions/function";
 import { Link } from "react-router-dom";
 import { hideCancelamento, hideBui, hideBolsa } from "../functions/function";
 
@@ -16,7 +21,7 @@ export function Ex() {
         EX
         <ul
           id="ulEX"
-          className="hidden absolute bg-zinc-200 [z-index:2] w-[145px] max-h-[183.5px] cursor-default top-[137%] right-0 border-[1px] border-[black] p-3 font-light text-[15px]"
+          className="hidden absolute bg-zinc-200 [z-index:2] w-[145px] max-h-[205.5px] cursor-default top-[137%] right-0 border-[1px] border-[black] p-3 font-light text-[15px]"
           onClick={(e) => e.stopPropagation()}
         >
           <li
@@ -26,10 +31,10 @@ export function Ex() {
             BUI
             <ul
               id="ulBui"
-              className="hidden absolute left-[103%] w-[135px] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[3px] cursor-pointer bg-zinc-200"
+              className="hidden absolute left-[103%] w-[155px] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[3px] cursor-pointer bg-zinc-200"
             >
               <li className="flex items-center justify-center [font-size:13px]">
-                <Link to="/ExAtivacaoBui" className="relative w-[95px] ml-1">
+                <Link to="/EXativacaoBui" className="relative w-[115px] ml-1">
                   Ativação
                 </Link>
                 <BsFillArrowRightCircleFill className="relative ml-2 " />
@@ -38,11 +43,32 @@ export function Ex() {
               <li className="flex items-center justify-center [font-size:13px]">
                 <Link
                   to="/EXsuspensoSetrans"
-                  className="relative w-[95px] ml-1"
+                  className="relative w-[115px] ml-1"
                 >
                   Suspenso Setrans
                 </Link>
                 <BsFillArrowRightCircleFill className="relative ml-2" />
+              </li>
+            </ul>
+          </li>
+
+          <li
+            onClick={hideTsocial}
+            className="hover:border-b-[1px] text-zinc-700 border-black cursor-pointer mb-1"
+          >
+            Tarifa Social
+            <ul
+              id="ulTsocial"
+              className="hidden absolute left-[103%] w-[135px] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[3px] cursor-pointer bg-zinc-200"
+            >
+              <li className="flex items-center justify-center [font-size:13px]">
+                <Link
+                  to="/EXativacaoTsocial"
+                  className="relative w-[95px] ml-1"
+                >
+                  Ativação
+                </Link>
+                <BsFillArrowRightCircleFill className="relative ml-2 " />
               </li>
             </ul>
           </li>
@@ -169,9 +195,33 @@ export function Ex() {
             </ul>
           </li>
 
-          <Link className="hover:border-b-[1px] text-zinc-700 border-black cursor-pointer mb-1">
+          <li className="hover:border-b-[1px] text-zinc-700 border-black cursor-pointer mb-1 block">
             Bloqueios
-          </Link>
+            <ul
+              id="ulBloqueios"
+              className="hidden absolute left-[103%] w-[135px] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[3px] cursor-pointer bg-zinc-200"
+            >
+              <li className="flex items-center justify-center [font-size:13px]">
+                <Link to="" className="relative w-[105px] ml-1">
+                  Antifraude
+                </Link>
+                <BsFillArrowRightCircleFill className="relative ml-2 " />
+              </li>
+
+              <li className="flex items-center justify-center [font-size:13px]">
+                <Link to="" className="relative w-[105px] ml-1">
+                  Fora do padrão
+                </Link>
+                <BsFillArrowRightCircleFill className="relative ml-2" />
+              </li>
+              <li className="flex items-center justify-center [font-size:13px]">
+                <Link to="" className="relative w-[105px] ml-1">
+                  ...
+                </Link>
+                <BsFillArrowRightCircleFill className="relative ml-2" />
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>

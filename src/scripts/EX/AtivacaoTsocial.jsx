@@ -2,7 +2,7 @@ import "../../styles/index.css";
 import "../../styles/styles.css";
 import { AiOutlineCopy } from "react-icons/ai";
 
-export function RecargaEfetuada(props) {
+export function AtivacaoTsocial(props) {
   async function copy() {
     const copyElement = document.getElementById("copy");
     const range = document.createRange();
@@ -31,12 +31,14 @@ export function RecargaEfetuada(props) {
           </h1>
           <h2
             id="copy"
-            className="font-bold [font-size:17px] [letter-spacing:3px] w-[450px] sm:w-[230px] tall:text-[13px] sm:font-normal md:w-[330px]"
+            className="font-bold [font-size:16px] [letter-spacing:3px] w-[450px] sm:w-[230px] tall:text-[13px] sm:font-normal md:w-[330px]"
           >
             <p>NOME:</p>
             <p>CPF:</p>
             <p>CARTÃO:</p>
             <br />
+            <p>#TARIFA SOCIAL</p>
+
             {props.script}
           </h2>
           <h3 className="absolute bottom-4">{props.path}</h3>

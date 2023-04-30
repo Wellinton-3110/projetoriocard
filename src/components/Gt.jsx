@@ -20,11 +20,11 @@ export function Gt() {
         GT
         <ul
           id="ulGT"
-          className="absolute bg-zinc-200 [z-index:2] w-[130px] max-h-[143.5px] w-[105px] cursor-default top-[137%] right-[-80%] border-[1px] border-[black] p-3 hidden"
+          className="absolute bg-zinc-200 [z-index:2] w-[130px] max-h-[143.5px] cursor-default top-[137%] right-[-80%] border-[1px] border-[black] p-3 hidden"
           onClick={(e) => e.stopPropagation()}
         >
           <li
-            className=" hover:border-b-[0.5px] [font-size:15px] text-zinc-700 border-black font-light text-[7px] mb-1"
+            className=" hover:border-b-[0.5px] text-zinc-700 border-black font-light text-[15px] mb-1"
             onClick={seniorMenu}
           >
             Sênior

@@ -31,6 +31,16 @@ export function hideGT(e) {
   }
 }
 
+export function hideAllMenus() {
+  const ulVT = document.getElementById("ulVT");
+  const ulGT = document.getElementById("ulGT");
+  const ulEX = document.getElementById("ulEX");
+
+  ulGT.classList.add("hidden");
+  ulEX.classList.add("hidden");
+  ulVT.classList.add("hidden");
+}
+
 export function seniorMenu() {
   const ulSenior = document.getElementById("ulSenior");
   const ulEspecial = document.getElementById("ulEspecial");
@@ -85,6 +95,8 @@ export function hideCancelamento() {
   const ulBolsa = document.getElementById("ulBolsa");
   const ulRecargas = document.getElementById("ulRecargas");
   const ulIntegracao = document.getElementById("ulIntegracao");
+  const ulTsocial = document.getElementById("ulTsocial");
+  ulTsocial.classList.add("hidden");
   ulIntegracao.classList.add("hidden");
   ulRecargas.classList.add("hidden");
   ulBolsa.classList.add("hidden");
@@ -97,6 +109,8 @@ export function hideBui() {
   const ulBolsa = document.getElementById("ulBolsa");
   const ulRecargas = document.getElementById("ulRecargas");
   const ulIntegracao = document.getElementById("ulIntegracao");
+  const ulTsocial = document.getElementById("ulTsocial");
+  ulTsocial.classList.add("hidden");
   ulIntegracao.classList.add("hidden");
   ulRecargas.classList.add("hidden");
   ulCancelamento.classList.add("hidden");
@@ -110,6 +124,8 @@ export function hideBolsa() {
   const ulBui = document.getElementById("ulBui");
   const ulRecargas = document.getElementById("ulRecargas");
   const ulIntegracao = document.getElementById("ulIntegracao");
+  const ulTsocial = document.getElementById("ulTsocial");
+  ulTsocial.classList.add("hidden");
   ulIntegracao.classList.add("hidden");
   ulRecargas.classList.add("hidden");
   ulBui.classList.add("hidden");
@@ -123,6 +139,8 @@ export function hideRecargas() {
   const ulCancelamento = document.getElementById("ulCancelamento");
   const ulBui = document.getElementById("ulBui");
   const ulIntegracao = document.getElementById("ulIntegracao");
+  const ulTsocial = document.getElementById("ulTsocial");
+  ulTsocial.classList.add("hidden");
   ulIntegracao.classList.add("hidden");
   ulBui.classList.add("hidden");
   ulCancelamento.classList.add("hidden");
@@ -136,11 +154,28 @@ export function hideIntegracao() {
   const ulBolsa = document.getElementById("ulBolsa");
   const ulCancelamento = document.getElementById("ulCancelamento");
   const ulBui = document.getElementById("ulBui");
+  const ulTsocial = document.getElementById("ulTsocial");
+  ulTsocial.classList.add("hidden");
   ulBui.classList.add("hidden");
   ulCancelamento.classList.add("hidden");
   ulBolsa.classList.add("hidden");
   ulRecargas.classList.add("hidden");
   ulIntegracao.classList.toggle("hidden");
+}
+
+export function hideTsocial() {
+  const ulTsocial = document.getElementById("ulTsocial");
+  const ulIntegracao = document.getElementById("ulIntegracao");
+  const ulRecargas = document.getElementById("ulRecargas");
+  const ulBolsa = document.getElementById("ulBolsa");
+  const ulCancelamento = document.getElementById("ulCancelamento");
+  const ulBui = document.getElementById("ulBui");
+  ulBui.classList.add("hidden");
+  ulCancelamento.classList.add("hidden");
+  ulBolsa.classList.add("hidden");
+  ulRecargas.classList.add("hidden");
+  ulIntegracao.classList.add("hidden");
+  ulTsocial.classList.toggle("hidden");
 }
 
 {
@@ -152,6 +187,8 @@ export function hideBuiVT() {
   const ulCancelamentoVT = document.getElementById("ulCancelamentoVT");
   const ulBolsaVT = document.getElementById("ulBolsaVT");
   const ulIntegracaoVT = document.getElementById("ulIntegracaoVT");
+  const ulTsocialVT = document.getElementById("ulTsocialVT");
+  ulTsocialVT.classList.add("hidden");
   ulIntegracaoVT.classList.add("hidden");
   ulBolsaVT.classList.add("hidden");
   ulCancelamentoVT.classList.add("hidden");
@@ -163,6 +200,8 @@ export function hideCancelamentoVT() {
   const ulBuiVT = document.getElementById("ulBuiVT");
   const ulBolsaVT = document.getElementById("ulBolsaVT");
   const ulIntegracaoVT = document.getElementById("ulIntegracaoVT");
+  const ulTsocialVT = document.getElementById("ulTsocialVT");
+  ulTsocialVT.classList.add("hidden");
   ulIntegracaoVT.classList.add("hidden");
   ulBolsaVT.classList.add("hidden");
   ulBuiVT.classList.add("hidden");
@@ -174,6 +213,8 @@ export function hideBolsaVT() {
   const ulCancelamentoVT = document.getElementById("ulCancelamentoVT");
   const ulBuiVT = document.getElementById("ulBuiVT");
   const ulIntegracaoVT = document.getElementById("ulIntegracaoVT");
+  const ulTsocialVT = document.getElementById("ulTsocialVT");
+  ulTsocialVT.classList.add("hidden");
   ulIntegracaoVT.classList.add("hidden");
   ulBuiVT.classList.add("hidden");
   ulCancelamentoVT.classList.add("hidden");
@@ -185,8 +226,23 @@ export function hideIntegracaoVT() {
   const ulBolsaVT = document.getElementById("ulBolsaVT");
   const ulCancelamentoVT = document.getElementById("ulCancelamentoVT");
   const ulBuiVT = document.getElementById("ulBuiVT");
+  const ulTsocialVT = document.getElementById("ulTsocialVT");
+  ulTsocialVT.classList.add("hidden");
   ulBuiVT.classList.add("hidden");
   ulCancelamentoVT.classList.add("hidden");
   ulBolsaVT.classList.add("hidden");
   ulIntegracaoVT.classList.toggle("hidden");
+}
+
+export function hideTsocialVT() {
+  const ulTsocialVT = document.getElementById("ulTsocialVT");
+  const ulIntegracaoVT = document.getElementById("ulIntegracaoVT");
+  const ulBolsaVT = document.getElementById("ulBolsaVT");
+  const ulCancelamentoVT = document.getElementById("ulCancelamentoVT");
+  const ulBuiVT = document.getElementById("ulBuiVT");
+  ulBuiVT.classList.add("hidden");
+  ulCancelamentoVT.classList.add("hidden");
+  ulBolsaVT.classList.add("hidden");
+  ulIntegracaoVT.classList.add("hidden");
+  ulTsocialVT.classList.toggle("hidden");
 }

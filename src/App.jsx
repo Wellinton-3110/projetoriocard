@@ -18,11 +18,14 @@ import { GTVandamento } from "./pages/ValeSocialPages/GTVandamento";
 import { GTVrevalidacaoApv } from "./pages/ValeSocialPages/GTVrevalidacaoApv";
 import { GTVrevalidacaoAnd } from "./pages/ValeSocialPages/GTVrevalidacaoAnd";
 import { GTbloqueio1368 } from "./pages/GTbloqueios/GTbloqueio1368";
+import { GTbloqueio1368s } from "./pages/GTbloqueios/GTbloqueio1368s";
 import { GTdescancelar } from "./pages/GTbloqueios/GTdescancelar";
+import { GTbiometria } from "./pages/GTbloqueios/GTbiometria";
 {
   /*--------------------------------------------------------------------------------------*/
 }
 import { EXativacaoBui } from "./pages/ExpressoPages/EXativacaoBui";
+import { EXativacaoTsocial } from "./pages/ExpressoPages/EXativacaoTsocial";
 import { EXcancelamento } from "./pages/ExpressoPages/EXcancelamento";
 import { EXcancelamentoDisponivel } from "./pages/ExpressoPages/EXcancelamentoDisponivel";
 import { EXsuspensoSetrans } from "./pages/ExpressoPages/EXsuspensoSetrans";
@@ -38,6 +41,7 @@ import { EXnaoIntegracao } from "./pages/ExpressoPages/EXnaoIntegracao";
   /*--------------------------------------------------------------------------------------*/
 }
 import { VTativacaoBui } from "./pages/ValeTransportePages/VTativacaoBui";
+import { VTativacaoTsocial } from "./pages/ValeTransportePages/VTativacaoTsocial";
 import { VTsuspensoSetrans } from "./pages/ValeTransportePages/VTsuspensoSetrans";
 import { VTcancelamento } from "./pages/ValeTransportePages/VTcancelamento";
 import { VTcancelamentoDisponivel } from "./pages/ValeTransportePages/VTcancelamentoDisponivel";
@@ -86,9 +90,12 @@ export function App() {
         <Route path="/GTVrevalidacaoApv" element={<GTVrevalidacaoApv />} />
         <Route path="/GTVrevalidacaoAnd" element={<GTVrevalidacaoAnd />} />
         <Route path="/GTbloqueio1368" element={<GTbloqueio1368 />} />
+        <Route path="/GTbloqueio1368s" element={<GTbloqueio1368s />} />
         <Route path="/GTdescancelar" element={<GTdescancelar />} />
+        <Route path="/GTbiometria" element={<GTbiometria />} />
         {/*____________________________EX___________________________*/}
         <Route path="/EXativacaoBui" element={<EXativacaoBui />} />
+        <Route path="/EXativacaoTsocial" element={<EXativacaoTsocial />} />
         <Route path="/EXcancelamento" element={<EXcancelamento />} />
         <Route
           path="/EXcancelamentoDisponivel"
@@ -105,6 +112,7 @@ export function App() {
         <Route path="/EXnaoIntegracao" element={<EXnaoIntegracao />} />
         {/*____________________________VT___________________________*/}
         <Route path="/VTativacaoBui" element={<VTativacaoBui />} />
+        <Route path="/VTativacaoTsocial" element={<VTativacaoTsocial />} />
         <Route path="/VTsuspensoSetrans" element={<VTsuspensoSetrans />} />
         <Route path="/VTcancelamento" element={<VTcancelamento />} />
         <Route

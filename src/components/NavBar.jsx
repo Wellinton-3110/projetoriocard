@@ -6,12 +6,12 @@ import { Gt } from "./Gt";
 import { Ex } from "./Ex";
 import { Link } from "react-router-dom";
 import {
-  hideBui,
   hideBuiVT,
   hideVT,
   hideCancelamentoVT,
   hideBolsaVT,
   hideIntegracaoVT,
+  hideTsocialVT,
 } from "../functions/function";
 
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
@@ -20,7 +20,7 @@ import { BsFillArrowLeftCircleFill } from "react-icons/bs";
 export function NavBar() {
   const nome = window.location.pathname;
   return (
-    <div className="AppBar h-[9vh] w-[100vw] bg-gradient-to-b from-[#00CEFC] to-[#00cefc00] flex items-center justify-between ">
+    <div className="AppBar h-[10vh] w-[100vw] bg-gradient-to-b from-[#00CEFC] to-[#00cefc00] flex items-center justify-between ">
       {/*-----------------------------------------------------------LEFT LOGO-----------------------------------------------------------*/}
       <img
         src={logo}
@@ -58,13 +58,13 @@ export function NavBar() {
                 BUI
                 <ul
                   id="ulBuiVT"
-                  className="hidden absolute right-[103%] w-[135px] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[3px] cursor-pointer bg-zinc-200"
+                  className="hidden absolute right-[103%] w-[145px] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[3px] cursor-pointer bg-zinc-200"
                 >
                   <li className="flex items-center justify-center [font-size:13px]">
                     <BsFillArrowLeftCircleFill className="relative mr-2 " />
                     <Link
                       to="/VTativacaoBui"
-                      className="relative w-[95px] ml-1"
+                      className="relative w-[115px] ml-1"
                     >
                       Ativação
                     </Link>
@@ -74,7 +74,7 @@ export function NavBar() {
                     <BsFillArrowLeftCircleFill className="relative mr-2 " />
                     <Link
                       to="/VTsuspensoSetrans"
-                      className="relative w-[95px] ml-1"
+                      className="relative w-[115px] ml-1"
                     >
                       Suspenso Setrans
                     </Link>
@@ -82,8 +82,25 @@ export function NavBar() {
                 </ul>
               </li>
 
-              <li className="hover:border-b-[1px] text-zinc-700 border-black cursor-pointer mb-1">
+              <li
+                onClick={hideTsocialVT}
+                className="hover:border-b-[1px] text-zinc-700 border-black cursor-pointer mb-1"
+              >
                 Tarifa Social
+                <ul
+                  id="ulTsocialVT"
+                  className="hidden absolute right-[103%] w-[135px] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[3px] cursor-pointer bg-zinc-200"
+                >
+                  <li className="flex items-center justify-center [font-size:13px]">
+                    <BsFillArrowLeftCircleFill className="relative mr-2 " />
+                    <Link
+                      to="/VTAtivacaoTsocial"
+                      className="relative w-[95px] ml-1"
+                    >
+                      Ativação
+                    </Link>
+                  </li>
+                </ul>
               </li>
 
               <li
