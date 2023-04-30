@@ -2,7 +2,7 @@ import "../../../styles/index.css";
 import "../../../styles/styles.css";
 import { AiOutlineCopy } from "react-icons/ai";
 
-export function AgendamentoComAcao(props) {
+export function AgendamentoSemAcao(props) {
   async function copy() {
     const copyElement = document.getElementById("copy");
     const range = document.createRange();
@@ -31,7 +31,7 @@ export function AgendamentoComAcao(props) {
           </h1>
           <h2
             id="copy"
-            className="font-bold [font-size:12px] [letter-spacing:3px] w-[690px] sm:w-[250px] tall:text-[10px] sm:font-normal md:w-[350px]"
+            className="font-bold [font-size:13px] [letter-spacing:3px] w-[650px] sm:w-[250px] tall:text-[10px] sm:font-normal md:w-[350px]"
           >
             {props.script}
           </h2>

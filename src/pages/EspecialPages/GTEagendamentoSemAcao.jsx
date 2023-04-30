@@ -1,5 +1,5 @@
 import { NavBar } from "../../components/NavBar";
-import { Agendamento } from "../../scripts/GT/senior/Agendamento";
+import { AgendamentoSemAcao } from "../../scripts/GT/especial/AgendamentoSemAcao";
 import { Footer } from "../../components/Footer";
 export function GTEagendamentoSemAcao() {
   const title = "Agendamento sem ação";
@@ -30,7 +30,7 @@ export function GTEagendamentoSemAcao() {
   return (
     <div className="h-[100vh] w-[100vw]">
       <NavBar />
-      <Agendamento title={title} script={script} path={path} />
+      <AgendamentoSemAcao title={title} script={script} path={path} />
       <Footer />
     </div>
   );
