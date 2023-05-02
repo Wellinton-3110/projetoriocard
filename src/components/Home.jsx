@@ -7,7 +7,7 @@ import { hideAllMenus } from "../functions/function";
 export function Home() {
   return (
     <div onClick={hideAllMenus} className="w-full h-[73vh] bg-white/10 flex">
-      <div className="bgHome w-[71vw] h-[67.5vh] m-auto text-center border-[3px] border-t-[1px] relative border-black/90 rounded-md p-3">
+      <div className="bgHome w-[73vw] h-[67.5vh] m-auto text-center border-[3px] border-t-[1px] relative border-black/90 rounded-md p-3">
         {/*------------------------------------###-----------------------------------------*/}
         <div className="flex items-center mt-7 justify-center [font-size:25px] tall:text-[21px]">
           <h1 className="md:text-[15px] ml-6 textAp [line-height:40px] [letter-spacing:1px]">

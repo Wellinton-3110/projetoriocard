@@ -188,6 +188,8 @@ export function hideBuiVT() {
   const ulBolsaVT = document.getElementById("ulBolsaVT");
   const ulIntegracaoVT = document.getElementById("ulIntegracaoVT");
   const ulTsocialVT = document.getElementById("ulTsocialVT");
+  const ulRecargasVT = document.getElementById("ulRecargasVT");
+  ulRecargasVT.classList.add("hidden");
   ulTsocialVT.classList.add("hidden");
   ulIntegracaoVT.classList.add("hidden");
   ulBolsaVT.classList.add("hidden");
@@ -201,6 +203,8 @@ export function hideCancelamentoVT() {
   const ulBolsaVT = document.getElementById("ulBolsaVT");
   const ulIntegracaoVT = document.getElementById("ulIntegracaoVT");
   const ulTsocialVT = document.getElementById("ulTsocialVT");
+  const ulRecargasVT = document.getElementById("ulRecargasVT");
+  ulRecargasVT.classList.add("hidden");
   ulTsocialVT.classList.add("hidden");
   ulIntegracaoVT.classList.add("hidden");
   ulBolsaVT.classList.add("hidden");
@@ -214,6 +218,8 @@ export function hideBolsaVT() {
   const ulBuiVT = document.getElementById("ulBuiVT");
   const ulIntegracaoVT = document.getElementById("ulIntegracaoVT");
   const ulTsocialVT = document.getElementById("ulTsocialVT");
+  const ulRecargasVT = document.getElementById("ulRecargasVT");
+  ulRecargasVT.classList.add("hidden");
   ulTsocialVT.classList.add("hidden");
   ulIntegracaoVT.classList.add("hidden");
   ulBuiVT.classList.add("hidden");
@@ -227,6 +233,8 @@ export function hideIntegracaoVT() {
   const ulCancelamentoVT = document.getElementById("ulCancelamentoVT");
   const ulBuiVT = document.getElementById("ulBuiVT");
   const ulTsocialVT = document.getElementById("ulTsocialVT");
+  const ulRecargasVT = document.getElementById("ulRecargasVT");
+  ulRecargasVT.classList.add("hidden");
   ulTsocialVT.classList.add("hidden");
   ulBuiVT.classList.add("hidden");
   ulCancelamentoVT.classList.add("hidden");
@@ -240,9 +248,26 @@ export function hideTsocialVT() {
   const ulBolsaVT = document.getElementById("ulBolsaVT");
   const ulCancelamentoVT = document.getElementById("ulCancelamentoVT");
   const ulBuiVT = document.getElementById("ulBuiVT");
+  const ulRecargasVT = document.getElementById("ulRecargasVT");
+  ulRecargasVT.classList.add("hidden");
   ulBuiVT.classList.add("hidden");
   ulCancelamentoVT.classList.add("hidden");
   ulBolsaVT.classList.add("hidden");
   ulIntegracaoVT.classList.add("hidden");
   ulTsocialVT.classList.toggle("hidden");
+}
+
+export function hideRecargasVT() {
+  const ulRecargasVT = document.getElementById("ulRecargasVT");
+  const ulTsocialVT = document.getElementById("ulTsocialVT");
+  const ulIntegracaoVT = document.getElementById("ulIntegracaoVT");
+  const ulBolsaVT = document.getElementById("ulBolsaVT");
+  const ulCancelamentoVT = document.getElementById("ulCancelamentoVT");
+  const ulBuiVT = document.getElementById("ulBuiVT");
+  ulBuiVT.classList.add("hidden");
+  ulCancelamentoVT.classList.add("hidden");
+  ulBolsaVT.classList.add("hidden");
+  ulIntegracaoVT.classList.add("hidden");
+  ulTsocialVT.classList.add("hidden");
+  ulRecargasVT.classList.toggle("hidden");
 }

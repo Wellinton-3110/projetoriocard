@@ -130,6 +130,13 @@ export function Ex() {
                 </Link>
                 <BsFillArrowRightCircleFill className="relative ml-2" />
               </li>
+
+              <li className="flex items-center justify-center [font-size:13px]">
+                <Link to="/EXforaPadrao" className="relative w-[95px] ml-1">
+                  Fora do padrão
+                </Link>
+                <BsFillArrowRightCircleFill className="relative ml-2" />
+              </li>
             </ul>
           </li>
 
@@ -189,34 +196,6 @@ export function Ex() {
               <li className="flex items-center justify-center [font-size:13px]">
                 <Link to="/EXrecargaPresa" className="relative w-[95px] ml-1">
                   Presa ATM
-                </Link>
-                <BsFillArrowRightCircleFill className="relative ml-2" />
-              </li>
-            </ul>
-          </li>
-
-          <li className="hover:border-b-[1px] text-zinc-700 border-black cursor-pointer mb-1 block">
-            Bloqueios
-            <ul
-              id="ulBloqueios"
-              className="hidden absolute left-[103%] w-[135px] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[3px] cursor-pointer bg-zinc-200"
-            >
-              <li className="flex items-center justify-center [font-size:13px]">
-                <Link to="" className="relative w-[105px] ml-1">
-                  Antifraude
-                </Link>
-                <BsFillArrowRightCircleFill className="relative ml-2 " />
-              </li>
-
-              <li className="flex items-center justify-center [font-size:13px]">
-                <Link to="" className="relative w-[105px] ml-1">
-                  Fora do padrão
-                </Link>
-                <BsFillArrowRightCircleFill className="relative ml-2" />
-              </li>
-              <li className="flex items-center justify-center [font-size:13px]">
-                <Link to="" className="relative w-[105px] ml-1">
-                  ...
                 </Link>
                 <BsFillArrowRightCircleFill className="relative ml-2" />
               </li>

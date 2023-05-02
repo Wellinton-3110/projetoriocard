@@ -28,6 +28,7 @@ import { EXativacaoBui } from "./pages/ExpressoPages/EXativacaoBui";
 import { EXativacaoTsocial } from "./pages/ExpressoPages/EXativacaoTsocial";
 import { EXcancelamento } from "./pages/ExpressoPages/EXcancelamento";
 import { EXcancelamentoDisponivel } from "./pages/ExpressoPages/EXcancelamentoDisponivel";
+import { EXforaPadrao } from "./pages/ExpressoPages/EXforaPadrao";
 import { EXsuspensoSetrans } from "./pages/ExpressoPages/EXsuspensoSetrans";
 import { EXbolsaGerada } from "./pages/ExpressoPages/EXbolsaGerada";
 import { EXbolsaPendente } from "./pages/ExpressoPages/EXbolsaPendente";
@@ -45,11 +46,15 @@ import { VTativacaoTsocial } from "./pages/ValeTransportePages/VTativacaoTsocial
 import { VTsuspensoSetrans } from "./pages/ValeTransportePages/VTsuspensoSetrans";
 import { VTcancelamento } from "./pages/ValeTransportePages/VTcancelamento";
 import { VTcancelamentoDisponivel } from "./pages/ValeTransportePages/VTcancelamentoDisponivel";
+import { VTforaPadrao } from "./pages/ValeTransportePages/VTforaPadrao";
 import { VTbolsaGerada } from "./pages/ValeTransportePages/VTbolsaGerada";
 import { VTbolsaPendente } from "./pages/ValeTransportePages/VTbolsaPendente";
 import { VTbolsaNgerada } from "./pages/ValeTransportePages/VTbolsaNgerada";
 import { VTintegracao } from "./pages/ValeTransportePages/VTintegracao";
 import { VTnaoIntegracao } from "./pages/ValeTransportePages/VTnaoIntegracao";
+import { VTrecargaEfetuada } from "./pages/ValeTransportePages/VTrecargaEfetuada";
+import { VTrecargaPendente } from "./pages/ValeTransportePages/VTrecargaPendente";
+import { VTrecargaPresa } from "./pages/ValeTransportePages/VTrecargaPresa";
 
 export function App() {
   return (
@@ -101,6 +106,7 @@ export function App() {
           path="/EXcancelamentoDisponivel"
           element={<EXcancelamentoDisponivel />}
         />
+        <Route path="/EXforaPadrao" element={<EXforaPadrao />} />
         <Route path="/EXsuspensoSetrans" element={<EXsuspensoSetrans />} />
         <Route path="/EXbolsaGerada" element={<EXbolsaGerada />} />
         <Route path="/EXbolsaPendente" element={<EXbolsaPendente />} />
@@ -119,11 +125,15 @@ export function App() {
           path="/VTcancelamentoDisponivel"
           element={<VTcancelamentoDisponivel />}
         />
+        <Route path="/VTforaPadrao" element={<VTforaPadrao />} />
         <Route path="/VTbolsaGerada" element={<VTbolsaGerada />} />
         <Route path="/VTbolsaPendente" element={<VTbolsaPendente />} />
         <Route path="/VTbolsaNgerada" element={<VTbolsaNgerada />} />
         <Route path="/VTintegracao" element={<VTintegracao />} />
         <Route path="/VTnaoIntegracao" element={<VTnaoIntegracao />} />
+        <Route path="/VTrecargaEfetuada" element={<VTrecargaEfetuada />} />
+        <Route path="/VTrecargaPendente" element={<VTrecargaPendente />} />
+        <Route path="/VTrecargaPresa" element={<VTrecargaPresa />} />
       </Routes>
     </BrowserRouter>
   );

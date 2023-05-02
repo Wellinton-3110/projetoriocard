@@ -12,6 +12,7 @@ import {
   hideBolsaVT,
   hideIntegracaoVT,
   hideTsocialVT,
+  hideRecargasVT,
 } from "../functions/function";
 
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
@@ -172,6 +173,13 @@ export function NavBar() {
                       Disponível
                     </Link>
                   </li>
+
+                  <li className="flex items-center justify-center [font-size:13px]">
+                    <BsFillArrowLeftCircleFill className="relative mr-2 " />
+                    <Link to="/VTforaPadrao" className="relative w-[95px] ml-1">
+                      Fora do padrão
+                    </Link>
+                  </li>
                 </ul>
               </li>
 
@@ -203,8 +211,45 @@ export function NavBar() {
                 </ul>
               </li>
 
-              <li className="hover:border-b-[1px] text-zinc-700 border-black cursor-pointer mb-1">
-                Bloqueios
+              <li
+                onClick={hideRecargasVT}
+                className="hover:border-b-[1px] text-zinc-700 border-black cursor-pointer mb-1 block"
+              >
+                Recargas
+                <ul
+                  id="ulRecargasVT"
+                  className="hidden absolute right-[103%] w-[135px] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[3px] cursor-pointer bg-zinc-200"
+                >
+                  <li className="flex items-center justify-center [font-size:13px]">
+                    <BsFillArrowLeftCircleFill className="relative mr-2 " />
+                    <Link
+                      to="/VTrecargaEfetuada"
+                      className="relative w-[95px] ml-1"
+                    >
+                      Efetuada
+                    </Link>
+                  </li>
+
+                  <li className="flex items-center justify-center [font-size:13px]">
+                    <BsFillArrowLeftCircleFill className="relative mr-2" />
+                    <Link
+                      to="/VTrecargaPendente"
+                      className="relative w-[95px] ml-1"
+                    >
+                      Pendente
+                    </Link>
+                  </li>
+
+                  <li className="flex items-center justify-center [font-size:13px]">
+                    <BsFillArrowLeftCircleFill className="relative mr-2" />
+                    <Link
+                      to="/VTrecargaPresa"
+                      className="relative w-[95px] ml-1"
+                    >
+                      Presa ATM
+                    </Link>
+                  </li>
+                </ul>
               </li>
             </ul>
           </li>

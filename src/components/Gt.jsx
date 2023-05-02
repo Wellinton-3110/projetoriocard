@@ -20,7 +20,7 @@ export function Gt() {
         GT
         <ul
           id="ulGT"
-          className="absolute bg-zinc-200 [z-index:2] w-[130px] max-h-[143.5px] cursor-default top-[137%] right-[-80%] border-[1px] border-[black] p-3 hidden"
+          className="absolute bg-zinc-200 [z-index:2] w-[130px] max-h-[153.5px] cursor-default top-[137%] right-[-80%] border-[1px] border-[black] p-3 hidden"
           onClick={(e) => e.stopPropagation()}
         >
           <li
@@ -216,6 +216,38 @@ export function Gt() {
                   Revalidação em andamento
                 </Link>
                 <BsFillArrowRightCircleFill className="absolute text-zinc-700 right-1" />
+              </li>
+            </ul>
+          </li>
+
+          <li className=" hover:border-b-[0.5px] text-zinc-700 border-black font-light text-[15px] mb-1">
+            Estudante
+            <ul
+              id="ulEstudante"
+              className="hidden absolute left-[103%] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[2px] w-21 cursor-pointer bg-zinc-200"
+            >
+              <li className="flex items-center justify-center [font-size:13px]">
+                <Link className="relative w-[95px] ml-1 " to="/GTSagendamento">
+                  SEEDUC
+                </Link>
+                <BsFillArrowRightCircleFill className="relative" />
+              </li>
+
+              <li className="flex items-center justify-center [font-size:13px]">
+                <Link className="relative w-[95px] ml-1" to="/GTScadastramento">
+                  Estadual
+                </Link>
+                <BsFillArrowRightCircleFill className="relative" />
+              </li>
+
+              <li className="flex items-center justify-center [font-size:13px]">
+                <Link
+                  to="/GTScancelamento/agendamento"
+                  className="relative w-[95px] ml-1"
+                >
+                  Municipal
+                </Link>
+                <BsFillArrowRightCircleFill className="relative" />
               </li>
             </ul>
           </li>
