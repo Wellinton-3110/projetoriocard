@@ -17,7 +17,7 @@ export function Ex() {
       className="flex items-center justify-center p-2 w-[15vw]"
       onClick={hideEX}
     >
-      <li className="relative border-solid border-[2px] border-[#ec008c] bg-white p-[5px] rounded-[21%] text-[#ff089cfe] text-[27px] font-medium hover:border-[3px]">
+      <li className="relative cursor-pointer border-solid border-[2px] border-[#ec008c] bg-white p-[5px] rounded-[21%] text-[#ff089cfe] text-[27px] font-medium hover:border-[3px]">
         EX
         <ul
           id="ulEX"

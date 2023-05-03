@@ -21,7 +21,7 @@ import { BsFillArrowLeftCircleFill } from "react-icons/bs";
 export function NavBar() {
   const nome = window.location.pathname;
   return (
-    <div className="AppBar h-[10vh] w-[100vw] bg-gradient-to-b from-[#00CEFC] to-[#00cefc00] flex items-center justify-between ">
+    <div className="AppBar relative h-[10vh] w-[100vw] bg-gradient-to-b from-[#00CEFC] to-[#00cefc00] flex items-center justify-between ">
       {/*-----------------------------------------------------------LEFT LOGO-----------------------------------------------------------*/}
       <img
         src={logo}

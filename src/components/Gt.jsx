@@ -6,6 +6,8 @@ import {
   especialMenu,
   valeSocialMenu,
   bloqueiosMenu,
+  estudanteMenu,
+  estudanteMunicipal,
 } from "../functions/function";
 import { Link } from "react-router-dom";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
@@ -20,7 +22,7 @@ export function Gt() {
         GT
         <ul
           id="ulGT"
-          className="absolute bg-zinc-200 [z-index:2] w-[130px] max-h-[153.5px] cursor-default top-[137%] right-[-80%] border-[1px] border-[black] p-3 hidden"
+          className="hidden absolute bg-zinc-200 [z-index:2] w-[130px] max-h-[153.5px] cursor-default top-[137%] right-[0] border-[1px] border-[black] p-3 "
           onClick={(e) => e.stopPropagation()}
         >
           <li
@@ -148,8 +150,6 @@ export function Gt() {
               id="ulValeSocial"
               className=" hidden absolute left-[103%] w-[185px] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[2px] w-21 cursor-pointer bg-zinc-200"
             >
-              {/*------------------------------------------------------------------------------*/}
-
               <li className="flex items-center justify-center [font-size:13px]">
                 <Link
                   to="/GTVagendamentoComAcao"
@@ -220,35 +220,222 @@ export function Gt() {
             </ul>
           </li>
 
-          <li className=" hover:border-b-[0.5px] text-zinc-700 border-black font-light text-[15px] mb-1">
+          <li
+            onClick={estudanteMenu}
+            className=" hover:border-b-[0.5px] text-zinc-700 border-black font-light text-[15px] mb-1"
+          >
             Estudante
             <ul
+              onClick={(e) => e.stopPropagation()}
               id="ulEstudante"
               className="hidden absolute left-[103%] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[2px] w-21 cursor-pointer bg-zinc-200"
             >
-              <li className="flex items-center justify-center [font-size:13px]">
-                <Link className="relative w-[95px] ml-1 " to="/GTSagendamento">
-                  SEEDUC
-                </Link>
-                <BsFillArrowRightCircleFill className="relative" />
-              </li>
+              <span className="flex items-center justify-center [font-size:13px]">
+                <li className="w-[95px] ml-1 " to="/GTSagendamento">
+                  SEEDUC***
+                  <ul
+                    id="ulSeeduc"
+                    className="hidden absolute left-[102%] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[2px] w-21 cursor-pointer bg-zinc-200"
+                  >
+                    <li className="flex items-center justify-center [font-size:13px]">
+                      <Link
+                        className="relative w-[95px] ml-1 "
+                        to="/GTSagendamento"
+                      >
+                        Cadastramento
+                      </Link>
+                      <BsFillArrowRightCircleFill className="relative" />
+                    </li>
 
-              <li className="flex items-center justify-center [font-size:13px]">
-                <Link className="relative w-[95px] ml-1" to="/GTScadastramento">
-                  Estadual
-                </Link>
-                <BsFillArrowRightCircleFill className="relative" />
-              </li>
+                    <li className="flex items-center justify-center [font-size:13px]">
+                      <Link
+                        className="relative w-[95px] ml-1"
+                        to="/GTScadastramento"
+                      >
+                        Cancelamento
+                      </Link>
+                      <BsFillArrowRightCircleFill className="relative" />
+                    </li>
 
-              <li className="flex items-center justify-center [font-size:13px]">
-                <Link
-                  to="/GTScancelamento/agendamento"
-                  className="relative w-[95px] ml-1"
-                >
+                    <li className="flex items-center justify-center [font-size:13px]">
+                      <Link
+                        to="/GTScancelamento/agendamento"
+                        className="relative w-[95px] ml-1"
+                      >
+                        2° via
+                      </Link>
+                      <BsFillArrowRightCircleFill className="relative" />
+                    </li>
+                  </ul>
+                </li>
+              </span>
+
+              <span className="flex items-center justify-center [font-size:13px]">
+                <li className="w-[95px] ml-1" to="/GTScadastramento">
+                  PLU***
+                  <ul
+                    id="ulPlu"
+                    className="hidden absolute left-[102%] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[2px] w-21 cursor-pointer bg-zinc-200"
+                  >
+                    <li className="flex items-center justify-center [font-size:13px]">
+                      <Link
+                        className="relative w-[95px] ml-1 "
+                        to="/GTSagendamento"
+                      >
+                        Cadastramento
+                      </Link>
+                      <BsFillArrowRightCircleFill className="relative" />
+                    </li>
+
+                    <li className="flex items-center justify-center [font-size:13px]">
+                      <Link
+                        className="relative w-[95px] ml-1"
+                        to="/GTScadastramento"
+                      >
+                        Cancelamento
+                      </Link>
+                      <BsFillArrowRightCircleFill className="relative" />
+                    </li>
+
+                    <li className="flex items-center justify-center [font-size:13px]">
+                      <Link
+                        to="/GTScancelamento/agendamento"
+                        className="relative w-[95px] ml-1"
+                      >
+                        2° via
+                      </Link>
+                      <BsFillArrowRightCircleFill className="relative" />
+                    </li>
+                  </ul>
+                </li>
+              </span>
+
+              <span className="flex items-center justify-center [font-size:13px]">
+                <li to="/GTScancelamento/agendamento" className="w-[95px] ml-1">
+                  Estadual***
+                  <ul
+                    id="ulEstadual"
+                    className="hidden absolute left-[102%] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[2px] w-21 cursor-pointer bg-zinc-200"
+                  >
+                    <li className="flex items-center justify-center [font-size:13px]">
+                      <Link
+                        className="relative w-[95px] ml-1 "
+                        to="/GTSagendamento"
+                      >
+                        Cadastramento
+                      </Link>
+                      <BsFillArrowRightCircleFill className="relative" />
+                    </li>
+
+                    <li className="flex items-center justify-center [font-size:13px]">
+                      <Link
+                        className="relative w-[95px] ml-1"
+                        to="/GTScadastramento"
+                      >
+                        Cancelamento
+                      </Link>
+                      <BsFillArrowRightCircleFill className="relative" />
+                    </li>
+
+                    <li className="flex items-center justify-center [font-size:13px]">
+                      <Link
+                        to="/GTScancelamento/agendamento"
+                        className="relative w-[95px] ml-1"
+                      >
+                        2° via
+                      </Link>
+                      <BsFillArrowRightCircleFill className="relative" />
+                    </li>
+                  </ul>
+                </li>
+              </span>
+
+              <span className="flex items-center justify-center [font-size:13px]">
+                <li to="/GTScancelamento/agendamento" className="w-[95px] ml-1">
+                  Federal***
+                  <ul
+                    id="ulFederal"
+                    className="hidden absolute left-[102%] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[2px] w-21 cursor-pointer bg-zinc-200"
+                  >
+                    <li className="flex items-center justify-center [font-size:13px]">
+                      <Link
+                        className="relative w-[95px] ml-1 "
+                        to="/GTSagendamento"
+                      >
+                        Cadastramento
+                      </Link>
+                      <BsFillArrowRightCircleFill className="relative" />
+                    </li>
+
+                    <li className="flex items-center justify-center [font-size:13px]">
+                      <Link
+                        className="relative w-[95px] ml-1"
+                        to="/GTScadastramento"
+                      >
+                        Cancelamento
+                      </Link>
+                      <BsFillArrowRightCircleFill className="relative" />
+                    </li>
+
+                    <li className="flex items-center justify-center [font-size:13px]">
+                      <Link
+                        to="/GTScancelamento/agendamento"
+                        className="relative w-[95px] ml-1"
+                      >
+                        2° via
+                      </Link>
+                      <BsFillArrowRightCircleFill className="relative" />
+                    </li>
+                  </ul>
+                </li>
+              </span>
+
+              <span className="flex items-center justify-center [font-size:13px]">
+                <li onClick={estudanteMunicipal} className="w-[95px] ml-1">
                   Municipal
-                </Link>
-                <BsFillArrowRightCircleFill className="relative" />
-              </li>
+                  <ul
+                    id="ulMunicipal"
+                    className="hidden absolute left-[102%] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[2px] w-21 cursor-pointer bg-zinc-200"
+                  >
+                    <li className="flex items-center justify-center [font-size:13px]">
+                      <Link
+                        to="/MUprimeiraVia"
+                        className="relative w-[95px] ml-1 "
+                      >
+                        1° via
+                      </Link>
+                      <BsFillArrowRightCircleFill className="relative" />
+                    </li>
+
+                    <li className="flex items-center justify-center [font-size:13px]">
+                      <Link
+                        to="/MUsegundaVia"
+                        className="relative w-[95px] ml-1"
+                      >
+                        2° via
+                      </Link>
+                      <BsFillArrowRightCircleFill className="relative" />
+                    </li>
+
+                    <li className="flex items-center justify-center [font-size:13px]">
+                      <Link to="" className="relative w-[95px] ml-1">
+                        Cadastramento
+                      </Link>
+                      <BsFillArrowRightCircleFill className="relative" />
+                    </li>
+
+                    <li className="flex items-center justify-center [font-size:13px]">
+                      <Link
+                        to="/MUcancelamento"
+                        className="relative w-[95px] ml-1"
+                      >
+                        Cancelamento
+                      </Link>
+                      <BsFillArrowRightCircleFill className="relative" />
+                    </li>
+                  </ul>
+                </li>
+              </span>
             </ul>
           </li>
 

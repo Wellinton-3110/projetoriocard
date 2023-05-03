@@ -76,14 +76,16 @@
 }
 
 .animateCard {
-  animation: animateCard 1s alternate ease-in;
+  animation: animateCard 1.3s alternate ease-in;
 }
 
 @keyframes animateCard {
   0% {
-    transform: translateX(180px);
+    transform: translateY(580px);
+    border-radius: 90%;
   }
-  from {
-    transform: translateX(100px);
+  100% {
+    transform: translateY(5px);
+    border-radius: 8px;
   }
 }

@@ -46,6 +46,8 @@ export function seniorMenu() {
   const ulEspecial = document.getElementById("ulEspecial");
   const ulValeSocial = document.getElementById("ulValeSocial");
   const ulBloqueios = document.getElementById("ulBloqueios");
+  const ulEstudante = document.getElementById("ulEstudante");
+  ulEstudante.classList.add("hidden");
   ulBloqueios.classList.add("hidden");
   ulValeSocial.classList.add("hidden");
   ulEspecial.classList.add("hidden");
@@ -57,6 +59,8 @@ export function especialMenu() {
   const ulEspecial = document.getElementById("ulEspecial");
   const ulValeSocial = document.getElementById("ulValeSocial");
   const ulBloqueios = document.getElementById("ulBloqueios");
+  const ulEstudante = document.getElementById("ulEstudante");
+  ulEstudante.classList.add("hidden");
   ulBloqueios.classList.add("hidden");
   ulValeSocial.classList.add("hidden");
   ulSenior.classList.add("hidden");
@@ -68,6 +72,8 @@ export function valeSocialMenu() {
   const ulSenior = document.getElementById("ulSenior");
   const ulEspecial = document.getElementById("ulEspecial");
   const ulBloqueios = document.getElementById("ulBloqueios");
+  const ulEstudante = document.getElementById("ulEstudante");
+  ulEstudante.classList.add("hidden");
   ulBloqueios.classList.add("hidden");
   ulSenior.classList.add("hidden");
   ulEspecial.classList.add("hidden");
@@ -79,10 +85,30 @@ export function bloqueiosMenu() {
   const ulSenior = document.getElementById("ulSenior");
   const ulEspecial = document.getElementById("ulEspecial");
   const ulBloqueios = document.getElementById("ulBloqueios");
+  const ulEstudante = document.getElementById("ulEstudante");
+  ulEstudante.classList.add("hidden");
   ulSenior.classList.add("hidden");
   ulEspecial.classList.add("hidden");
   ulValeSocial.classList.add("hidden");
   ulBloqueios.classList.toggle("hidden");
+}
+
+export function estudanteMenu() {
+  const ulEstudante = document.getElementById("ulEstudante");
+  const ulValeSocial = document.getElementById("ulValeSocial");
+  const ulSenior = document.getElementById("ulSenior");
+  const ulEspecial = document.getElementById("ulEspecial");
+  const ulBloqueios = document.getElementById("ulBloqueios");
+  ulBloqueios.classList.add("hidden");
+  ulSenior.classList.add("hidden");
+  ulEspecial.classList.add("hidden");
+  ulValeSocial.classList.add("hidden");
+  ulEstudante.classList.toggle("hidden");
+}
+
+export function estudanteMunicipal() {
+  const ulMunicipal = document.getElementById("ulMunicipal");
+  ulMunicipal.classList.toggle("hidden");
 }
 
 {

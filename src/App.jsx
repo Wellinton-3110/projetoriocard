@@ -21,6 +21,9 @@ import { GTbloqueio1368 } from "./pages/GTbloqueios/GTbloqueio1368";
 import { GTbloqueio1368s } from "./pages/GTbloqueios/GTbloqueio1368s";
 import { GTdescancelar } from "./pages/GTbloqueios/GTdescancelar";
 import { GTbiometria } from "./pages/GTbloqueios/GTbiometria";
+import { MUprimeiraVia } from "./pages/EstudantePages/MUprimeiraVia";
+import { MUsegundaVia } from "./pages/EstudantePages/MUsegundaVia";
+import { MUcancelamento } from "./pages/EstudantePages/MUcancelamento";
 {
   /*--------------------------------------------------------------------------------------*/
 }
@@ -98,6 +101,9 @@ export function App() {
         <Route path="/GTbloqueio1368s" element={<GTbloqueio1368s />} />
         <Route path="/GTdescancelar" element={<GTdescancelar />} />
         <Route path="/GTbiometria" element={<GTbiometria />} />
+        <Route path="/MUprimeiraVia" element={<MUprimeiraVia />} />
+        <Route path="/MUsegundaVia" element={<MUsegundaVia />} />
+        <Route path="/MUcancelamento" element={<MUcancelamento />} />
         {/*____________________________EX___________________________*/}
         <Route path="/EXativacaoBui" element={<EXativacaoBui />} />
         <Route path="/EXativacaoTsocial" element={<EXativacaoTsocial />} />
