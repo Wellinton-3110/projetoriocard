@@ -7,7 +7,7 @@ import { hideAllMenus } from "../functions/function";
 export function Home() {
   return (
     <div onClick={hideAllMenus} className="w-full h-[73vh] bg-white/10 flex">
-      <div className="bgHome w-[77vw] h-[67.5vh] m-auto text-center border-[3px] border-t-[1px] relative border-black/90 rounded-md p-3">
+      <div className="bgHome w-[83vw] h-[67.5vh] m-auto text-center border-[3px] border-t-[1px] relative border-black/90 rounded-md p-3">
         {/*------------------------------------###-----------------------------------------*/}
         <div className="flex items-center mt-7 justify-center [font-size:25px] tall:text-[21px]">
           <h1 className="md:text-[15px] ml-6 textAp [line-height:40px] [letter-spacing:1px]">
@@ -16,8 +16,8 @@ export function Home() {
             escolha o script que deseja nos menus acima
           </h1>
 
-          <span className="md:absolute md:right-[155px] md:top-4">
-            <BsArrowUpRight className="w-5 h-5 ml-4 animate-bounce" />
+          <span className="md:absolute md:right-[210px] md:top-4">
+            <BsArrowUpRight className="w-3 h-3 ml-4 animate-bounce" />
           </span>
         </div>
         {/*-----------------------------------###-----------------------------------------*/}
@@ -28,7 +28,7 @@ export function Home() {
           <br />
           Após selecionar o script, clique no ícone abaixo para copiar e
           cole(CTRL + V) onde desejar.
-          <BsArrowDownRight className="absolute right-[10vw] top-[17vh] w-9 h-9 animate-bounce sm:top-[20vh] md:w-4 md:h4 md:right-[6vw] md:top-[25vh]" />
+          <BsArrowDownRight className="absolute right-[10vw] top-[17vh] w-7 h-7 animate-bounce sm:top-[22vh] sm:right-[13vw] md:w-4 md:h4 md:right-[9vw] md:top-[27vh]" />
         </footer>
         <AiOutlineCopy className="absolute w-7 h-7 bottom-7 right-7 mouse-pointer animate-ping md:w-4 md:h4 md:right-2 md:bottom-2" />
         {/*-----------------------------------###-----------------------------------------*/}
