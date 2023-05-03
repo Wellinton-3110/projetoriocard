@@ -4,7 +4,7 @@ import { Footer } from "../../components/Footer";
 
 export function VTcancelamentoDisponivel() {
   const title = "CANCELAMENTO VT COM STATUS DISPONÍVEL";
-  const script = `Cliente solicitou cancelamento de cartão expresso, mas foi verificado que o cartão está disponível sem nenhum comprador associado. Foi orientado a realizar associação do cartão pelo site "Para Você" de acordo com os guias práticos da riocard, em seguida solicitar o cancelamento pelo site ou central de atendimento.`;
+  const script = `Cliente solicitou cancelamento de cartão vale transporte, mas foi verificado que o cartão está disponível sem nenhum comprador associado. Foi orientado a realizar associação do cartão pelo site "Para Empresas" de acordo com os guias práticos da riocard, em seguida solicitar o cancelamento pelo site ou central de atendimento.`;
 
   const path = "INFORMAÇÃO | USUÁRIO | EXPRESSO | CARTÃO | CANCELAR ";
   return (
