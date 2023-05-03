@@ -37,7 +37,7 @@ export function NavBar() {
       )}
       {/*-----------------------------------------------------------Right Menu-----------------------------------------------------------*/}
 
-      <div className="#MenuBar flex max-h-[43px] max-w-[230px] relative right-[3vw] sm:right-[22%] md:right-[28%] p-3">
+      <div className="#MenuBar flex max-h-[43px] max-w-[230px] relative right-[5vw] sm:right-[22%] md:right-[28%] p-3">
         <Gt />
         <Ex />
 
