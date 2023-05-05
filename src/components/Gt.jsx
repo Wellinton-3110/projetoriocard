@@ -8,6 +8,7 @@ import {
   bloqueiosMenu,
   estudanteMenu,
   estudanteMunicipal,
+  PLU,
 } from "../functions/function";
 import { Link } from "react-router-dom";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
@@ -228,10 +229,10 @@ export function Gt() {
             <ul
               onClick={(e) => e.stopPropagation()}
               id="ulEstudante"
-              className="hidden absolute left-[103%] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[2px] w-21 cursor-pointer bg-zinc-200"
+              className="hidden w-19 absolute left-[101%] top-[-0.5%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[2px] cursor-pointer bg-zinc-200"
             >
               <span className="flex items-center justify-center [font-size:13px]">
-                <li className="w-[95px] ml-1 " to="/GTSagendamento">
+                <li className="w-[90px] ml-1 " to="/GTSagendamento">
                   SEEDUC***
                   <ul
                     id="ulSeeduc"
@@ -271,8 +272,12 @@ export function Gt() {
               </span>
 
               <span className="flex items-center justify-center [font-size:13px]">
-                <li className="w-[95px] ml-1" to="/GTScadastramento">
-                  PLU***
+                <li
+                  onClick={PLU}
+                  className="w-[90px] ml-1"
+                  to="/GTScadastramento"
+                >
+                  PLU
                   <ul
                     id="ulPlu"
                     className="hidden absolute left-[102%] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[2px] w-21 cursor-pointer bg-zinc-200"
@@ -280,9 +285,9 @@ export function Gt() {
                     <li className="flex items-center justify-center [font-size:13px]">
                       <Link
                         className="relative w-[95px] ml-1 "
-                        to="/GTSagendamento"
+                        to="/PLUprimeiraVia"
                       >
-                        Cadastramento
+                        1° VIA
                       </Link>
                       <BsFillArrowRightCircleFill className="relative" />
                     </li>
@@ -290,7 +295,17 @@ export function Gt() {
                     <li className="flex items-center justify-center [font-size:13px]">
                       <Link
                         className="relative w-[95px] ml-1"
-                        to="/GTScadastramento"
+                        to="/PLUsegundaVia"
+                      >
+                        2° VIA
+                      </Link>
+                      <BsFillArrowRightCircleFill className="relative" />
+                    </li>
+
+                    <li className="flex items-center justify-center [font-size:13px]">
+                      <Link
+                        to="/PLUcancelamento"
+                        className="relative w-[95px] ml-1"
                       >
                         Cancelamento
                       </Link>
@@ -299,10 +314,10 @@ export function Gt() {
 
                     <li className="flex items-center justify-center [font-size:13px]">
                       <Link
-                        to="/GTScancelamento/agendamento"
+                        to="/PLUrenovacao"
                         className="relative w-[95px] ml-1"
                       >
-                        2° via
+                        Renovação
                       </Link>
                       <BsFillArrowRightCircleFill className="relative" />
                     </li>
@@ -311,7 +326,7 @@ export function Gt() {
               </span>
 
               <span className="flex items-center justify-center [font-size:13px]">
-                <li to="/GTScancelamento/agendamento" className="w-[95px] ml-1">
+                <li to="/GTScancelamento/agendamento" className="w-[90px] ml-1">
                   Estadual***
                   <ul
                     id="ulEstadual"
@@ -351,7 +366,7 @@ export function Gt() {
               </span>
 
               <span className="flex items-center justify-center [font-size:13px]">
-                <li to="/GTScancelamento/agendamento" className="w-[95px] ml-1">
+                <li to="/GTScancelamento/agendamento" className="w-[90px] ml-1">
                   Federal***
                   <ul
                     id="ulFederal"
@@ -391,16 +406,16 @@ export function Gt() {
               </span>
 
               <span className="flex items-center justify-center [font-size:13px]">
-                <li onClick={estudanteMunicipal} className="w-[95px] ml-1">
+                <li onClick={estudanteMunicipal} className="w-[90px] ml-1">
                   Municipal
                   <ul
                     id="ulMunicipal"
-                    className="hidden absolute left-[102%] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[2px] w-21 cursor-pointer bg-zinc-200"
+                    className="hidden absolute w-[135px] left-[102%] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[2px]  cursor-pointer bg-zinc-200"
                   >
                     <li className="flex items-center justify-center [font-size:13px]">
                       <Link
                         to="/MUprimeiraVia"
-                        className="relative w-[95px] ml-1 "
+                        className="relative w-[105px] ml-1 "
                       >
                         1° via
                       </Link>
@@ -410,7 +425,7 @@ export function Gt() {
                     <li className="flex items-center justify-center [font-size:13px]">
                       <Link
                         to="/MUsegundaVia"
-                        className="relative w-[95px] ml-1"
+                        className="relative w-[105px] ml-1"
                       >
                         2° via
                       </Link>
@@ -418,7 +433,17 @@ export function Gt() {
                     </li>
 
                     <li className="flex items-center justify-center [font-size:13px]">
-                      <Link to="" className="relative w-[95px] ml-1">
+                      <Link
+                        to="/MUatualizarEscola"
+                        className="relative w-[105px] ml-1"
+                      >
+                        Atualizar/escola
+                      </Link>
+                      <BsFillArrowRightCircleFill className="relative" />
+                    </li>
+
+                    <li className="flex items-center justify-center [font-size:13px]">
+                      <Link to="" className="relative w-[105px] ml-1">
                         Cadastramento
                       </Link>
                       <BsFillArrowRightCircleFill className="relative" />
@@ -427,7 +452,7 @@ export function Gt() {
                     <li className="flex items-center justify-center [font-size:13px]">
                       <Link
                         to="/MUcancelamento"
-                        className="relative w-[95px] ml-1"
+                        className="relative w-[105px] ml-1"
                       >
                         Cancelamento
                       </Link>

@@ -108,7 +108,16 @@ export function estudanteMenu() {
 
 export function estudanteMunicipal() {
   const ulMunicipal = document.getElementById("ulMunicipal");
+  const ulPlu = document.getElementById("ulPlu");
+  ulPlu.classList.add("hidden");
   ulMunicipal.classList.toggle("hidden");
+}
+
+export function PLU() {
+  const ulPlu = document.getElementById("ulPlu");
+  const ulMunicipal = document.getElementById("ulMunicipal");
+  ulMunicipal.classList.add("hidden");
+  ulPlu.classList.toggle("hidden");
 }
 
 {

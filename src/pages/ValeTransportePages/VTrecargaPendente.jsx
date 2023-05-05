@@ -4,7 +4,7 @@ import { Footer } from "../../components/Footer";
 
 export function VTrecargaPendente() {
   const title = "RECARGA PENDENTE";
-  const script = `Cliente solicita consulta do status de recarga em cartão vale transporte, foi verificado que a última recarga consta como pendente, cliente orientado a validar a recarga via app Valida mais, terminal de consulta ou aguardar liberação de espaço no cartão.
+  const script = `Cliente solicita consulta do status de recarga em cartão vale transporte, foi verificado que a última recarga consta como pendente, cliente orientado a validar a recarga via app Valida mais, ônibus, terminal de consulta ou aguardar liberação de espaço no cartão.
   `;
 
   const path =

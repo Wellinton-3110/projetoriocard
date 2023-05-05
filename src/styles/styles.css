@@ -13,9 +13,11 @@
   background-position-y: center;
   background-repeat: no-repeat;
   background-image: linear-gradient(
-      to top,
-      rgba(25, 199, 45, 0.522),
-      rgb(255, 255, 255)
+      to bottom,
+      rgba(18, 190, 38, 0.712),
+      rgba(15, 148, 30, 0.055),
+      rgba(49, 56, 49, 0.24),
+      rgba(2, 2, 2, 0.87)
     ),
     url("../assets/bgPage2.svg");
 }
@@ -27,9 +29,11 @@
   background-position-y: center;
   background-repeat: no-repeat;
   background-image: linear-gradient(
-      to top,
-      #c313ace8,
-      rgba(230, 62, 143, 0.531)
+      to bottom,
+      #e62ccdfb,
+      #dd15c200,
+      #201a1aad,
+      rgba(12, 12, 12, 0.925)
     ),
     url("../assets/bgPage2.svg");
 }
@@ -41,9 +45,11 @@
   background-position-y: center;
   background-repeat: no-repeat;
   background-image: linear-gradient(
-      to top,
-      #eaea15e8,
-      rgba(195, 228, 12, 0.175)
+      to bottom,
+      #fdfd17f6,
+      #fdfd1757,
+      rgba(7, 7, 7, 0.712),
+      rgba(0, 0, 0, 0.425)
     ),
     url("../assets/bgPage2.svg");
 }
@@ -76,7 +82,7 @@
 }
 
 .animateCard {
-  animation: animateCard 2s alternate ease-out;
+  animation: animateCard 0.5s alternate ease-out;
 }
 
 @keyframes animateCard {

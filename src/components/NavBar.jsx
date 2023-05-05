@@ -37,7 +37,7 @@ export function NavBar() {
       )}
       {/*-----------------------------------------------------------Right Menu-----------------------------------------------------------*/}
 
-      <div className="#MenuBar flex max-h-[43px] max-w-[230px] relative right-[5vw] sm:right-[22%] md:right-[28%] p-3">
+      <div className="#MenuBar flex max-h-[43px] max-w-[230px] relative right-[6vw] sm:right-[22%] md:right-[28%] p-3">
         <Gt />
         <Ex />
 
@@ -49,7 +49,7 @@ export function NavBar() {
             VT
             <ul
               id="ulVT"
-              className="hidden absolute bg-zinc-200 [z-index:2] w-[140px] max-h-[193.5px] cursor-default top-[144%] left-0 border-[1px] border-[black] p-3 font-light text-[15px]"
+              className="hidden absolute bg-zinc-200 [z-index:2] w-[140px] max-h-[193.5px] cursor-default top-[144%] right-0 border-[1px] border-[black] p-3 font-light text-[15px]"
               onClick={(e) => e.stopPropagation()}
             >
               <li

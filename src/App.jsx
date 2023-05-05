@@ -21,11 +21,19 @@ import { GTbloqueio1368 } from "./pages/GTbloqueios/GTbloqueio1368";
 import { GTbloqueio1368s } from "./pages/GTbloqueios/GTbloqueio1368s";
 import { GTdescancelar } from "./pages/GTbloqueios/GTdescancelar";
 import { GTbiometria } from "./pages/GTbloqueios/GTbiometria";
+{
+  /*--------------------------------------ESCOLAR------------------------------------------------*/
+}
 import { MUprimeiraVia } from "./pages/EstudantePages/MUprimeiraVia";
 import { MUsegundaVia } from "./pages/EstudantePages/MUsegundaVia";
 import { MUcancelamento } from "./pages/EstudantePages/MUcancelamento";
+import { MUatualizarEscola } from "./pages/EstudantePages/MUatualizarEscola";
+import { PLUprimeiraVia } from "./pages/EstudantePages/PLUprimeiraVia";
+import { PLUsegundaVia } from "./pages/EstudantePages/PLUsegundaVia";
+import { PLUcancelamento } from "./pages/EstudantePages/PLUcancelamento";
+import { PLUrenovacao } from "./pages/EstudantePages/PLUrenovacao";
 {
-  /*--------------------------------------------------------------------------------------*/
+  /*--------------------------------------EX------------------------------------------------*/
 }
 import { EXativacaoBui } from "./pages/ExpressoPages/EXativacaoBui";
 import { EXativacaoTsocial } from "./pages/ExpressoPages/EXativacaoTsocial";
@@ -101,9 +109,15 @@ export function App() {
         <Route path="/GTbloqueio1368s" element={<GTbloqueio1368s />} />
         <Route path="/GTdescancelar" element={<GTdescancelar />} />
         <Route path="/GTbiometria" element={<GTbiometria />} />
+        {/*____________________________ESCOLAR___________________________*/}
         <Route path="/MUprimeiraVia" element={<MUprimeiraVia />} />
         <Route path="/MUsegundaVia" element={<MUsegundaVia />} />
         <Route path="/MUcancelamento" element={<MUcancelamento />} />
+        <Route path="/MUatualizarEscola" element={<MUatualizarEscola />} />
+        <Route path="/PLUprimeiraVia" element={<PLUprimeiraVia />} />
+        <Route path="/PLUsegundaVia" element={<PLUsegundaVia />} />
+        <Route path="/PLUcancelamento" element={<PLUcancelamento />} />
+        <Route path="/PLUrenovacao" element={<PLUrenovacao />} />
         {/*____________________________EX___________________________*/}
         <Route path="/EXativacaoBui" element={<EXativacaoBui />} />
         <Route path="/EXativacaoTsocial" element={<EXativacaoTsocial />} />

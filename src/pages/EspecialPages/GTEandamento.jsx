@@ -4,7 +4,7 @@ import { Footer } from "../../components/Footer";
 export function GTEandamento() {
   const title = "Andamento da solicitação";
   const script =
-    "Cliente solicita informações a respeito da aprovação do seu benefício. Foi informada que ainda não consta seu cadastro no sistema e orientado(a) a aguardar ou entrar em contato com o posto que solicitou benefício para mais informações.";
+    "Cliente solicita informações a respeito da aprovação do seu benefício. Foi informada que ainda não consta seu cadastro no sistema, orientado(a) a aguardar ou entrar em contato com o posto que solicitou benefício para mais informações.";
   const path = "INFORMACAO | ESPECIAL | BENEFICIO";
   return (
     <div className="h-[100vh] w-[100vw]">

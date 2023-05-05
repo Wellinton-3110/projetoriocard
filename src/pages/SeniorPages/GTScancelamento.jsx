@@ -4,7 +4,7 @@ import { Footer } from "../../components/Footer";
 export function GTScancelamento() {
   const title = "Cancelamento sem ação de agendamento";
   const script =
-    "Cliente solicita cancelamento do seu cartão na base  por motivo de  e solicitação de segunda via, porém o sistema não disponibiliza agendamento. O cliente foi direcionado para a Loja RioCard Mais Com posse de documento de identificação e comprovante de residência para solicitar segunda via.";
+    "Cliente solicita cancelamento do seu cartão na base  por motivo de () e solicitação de segunda via, porém o sistema não disponibiliza agendamento. O cliente foi direcionado para a Loja RioCard Mais na posse dos seus documentos pessoais e comprovante de residência para solicitar segunda via.";
   const path = "SERVICO | SENIOR | CANCELAMENTO E SOLICITACAO DE 2 VIA";
   return (
     <div className="h-[100vh] w-[100vw]">
