@@ -14,10 +14,10 @@
   background-repeat: no-repeat;
   background-image: linear-gradient(
       to bottom,
-      rgba(18, 190, 38, 0.712),
-      rgba(15, 148, 30, 0.055),
-      rgba(49, 56, 49, 0.24),
-      rgba(2, 2, 2, 0.87)
+      rgba(128, 236, 118, 0.774),
+      rgba(126, 133, 126, 0.007),
+      rgba(209, 219, 209, 0),
+      rgba(10, 114, 1, 0.774)
     ),
     url("../assets/bgPage2.svg");
 }
