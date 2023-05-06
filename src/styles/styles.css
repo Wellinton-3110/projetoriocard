@@ -13,11 +13,11 @@
   background-position-y: center;
   background-repeat: no-repeat;
   background-image: linear-gradient(
-      to bottom,
-      rgba(128, 236, 118, 0.774),
-      rgba(126, 133, 126, 0.007),
-      rgba(209, 219, 209, 0),
-      rgba(10, 114, 1, 0.774)
+      to top,
+      rgba(13, 214, 13, 0.5),
+      rgba(250, 248, 248, 0),
+      rgba(184, 175, 175, 0.13),
+      rgba(202, 236, 199, 0.178)
     ),
     url("../assets/bgPage2.svg");
 }
@@ -31,9 +31,9 @@
   background-image: linear-gradient(
       to bottom,
       #e62ccdfb,
-      #dd15c200,
-      #201a1aad,
-      rgba(12, 12, 12, 0.925)
+      #ffffff7c,
+      #e6e6e633,
+      rgba(218, 76, 194, 0.829)
     ),
     url("../assets/bgPage2.svg");
 }
@@ -45,11 +45,11 @@
   background-position-y: center;
   background-repeat: no-repeat;
   background-image: linear-gradient(
-      to bottom,
+      to top,
       #fdfd17f6,
-      #fdfd1757,
-      rgba(7, 7, 7, 0.712),
-      rgba(0, 0, 0, 0.425)
+      #fdfd1769,
+      rgba(221, 228, 32, 0.082),
+      rgba(235, 220, 220, 0.541)
     ),
     url("../assets/bgPage2.svg");
 }

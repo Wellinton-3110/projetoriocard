@@ -31,14 +31,13 @@ export function AtivacaoBui(props) {
           </h1>
           <h2
             id="copy"
-            className="font-bold [font-size:16px] [letter-spacing:3px] w-[450px] sm:w-[230px] tall:text-[13px] sm:font-normal md:w-[330px]"
+            className=" text-black font-black [font-size:15px] [letter-spacing:3px] w-[650px] sm:w-[230px] tall:text-[13px] sm:font-normal md:w-[330px]"
           >
             <p>NOME:</p>
             <p>CPF:</p>
             <p>CARTÃO:</p>
             <br />
-
-            {props.script}
+            <p className="font-bold">{props.script}</p>
           </h2>
           <h3 className="absolute bottom-4">{props.path}</h3>
           <span
