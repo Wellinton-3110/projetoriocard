@@ -109,15 +109,45 @@ export function estudanteMenu() {
 export function estudanteMunicipal() {
   const ulMunicipal = document.getElementById("ulMunicipal");
   const ulPlu = document.getElementById("ulPlu");
+  const ulSeeduc = document.getElementById("ulSeeduc");
+  const ulFederal = document.getElementById("ulFederal");
+  ulFederal.classList.add("hidden");
+  ulSeeduc.classList.add("hidden");
   ulPlu.classList.add("hidden");
   ulMunicipal.classList.toggle("hidden");
+}
+
+export function estudanteFederal() {
+  const ulFederal = document.getElementById("ulFederal");
+  const ulMunicipal = document.getElementById("ulMunicipal");
+  const ulPlu = document.getElementById("ulPlu");
+  const ulSeeduc = document.getElementById("ulSeeduc");
+  ulSeeduc.classList.add("hidden");
+  ulPlu.classList.add("hidden");
+  ulMunicipal.classList.add("hidden");
+  ulFederal.classList.toggle("hidden");
 }
 
 export function PLU() {
   const ulPlu = document.getElementById("ulPlu");
   const ulMunicipal = document.getElementById("ulMunicipal");
+  const ulSeeduc = document.getElementById("ulSeeduc");
+  const ulFederal = document.getElementById("ulFederal");
+  ulFederal.classList.add("hidden");
+  ulSeeduc.classList.add("hidden");
   ulMunicipal.classList.add("hidden");
   ulPlu.classList.toggle("hidden");
+}
+
+export function SDC() {
+  const ulSeeduc = document.getElementById("ulSeeduc");
+  const ulPlu = document.getElementById("ulPlu");
+  const ulMunicipal = document.getElementById("ulMunicipal");
+  const ulFederal = document.getElementById("ulFederal");
+  ulFederal.classList.add("hidden");
+  ulMunicipal.classList.add("hidden");
+  ulPlu.classList.add("hidden");
+  ulSeeduc.classList.toggle("hidden");
 }
 
 {

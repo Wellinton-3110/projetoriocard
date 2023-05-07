@@ -9,6 +9,8 @@ import {
   estudanteMenu,
   estudanteMunicipal,
   PLU,
+  SDC,
+  estudanteFederal,
 } from "../functions/function";
 import { Link } from "react-router-dom";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
@@ -183,6 +185,16 @@ export function Gt() {
 
               <li className="flex items-center justify-center [font-size:13px]">
                 <Link
+                  to="/GTVvencido"
+                  className="relative left-[0] w-[180px] ml-1 text-zinc-700"
+                >
+                  Cartão vencido
+                </Link>
+                <BsFillArrowRightCircleFill className="absolute text-zinc-700 right-1" />
+              </li>
+
+              <li className="flex items-center justify-center [font-size:13px]">
+                <Link
                   to="/GTVcadastramento"
                   className="relative left-[0] w-[180px] ml-1 text-zinc-700"
                 >
@@ -200,6 +212,7 @@ export function Gt() {
                 </Link>
                 <BsFillArrowRightCircleFill className="absolute text-zinc-700 right-1" />
               </li>
+
               <li className="flex items-center justify-center [font-size:13px]">
                 <Link
                   to="/GTVrevalidacaoApv"
@@ -223,17 +236,21 @@ export function Gt() {
 
           <li
             onClick={estudanteMenu}
-            className=" hover:border-b-[0.5px] text-zinc-700 border-black font-light text-[15px] mb-1"
+            className=" hover:border-b-[0.5px] text-[#ff8d31] border-black font-light text-[15px] mb-1"
           >
             Estudante
             <ul
               onClick={(e) => e.stopPropagation()}
               id="ulEstudante"
-              className="hidden w-19 absolute left-[101%] top-[-0.5%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[2px] cursor-pointer bg-zinc-200"
+              className="hidden w-19 absolute left-[101%] top-[-0.5%] border-[1px] border-zinc-700 text-zinc-700 p-2 pl-[1.5px] space-y-[2px] cursor-pointer bg-zinc-200"
             >
               <span className="flex items-center justify-center [font-size:13px]">
-                <li className="w-[90px] ml-1 " to="/GTSagendamento">
-                  SEEDUC***
+                <li
+                  onClick={SDC}
+                  className="w-[90px] ml-1 "
+                  to="/GTSagendamento"
+                >
+                  SEEDUC
                   <ul
                     id="ulSeeduc"
                     className="hidden absolute left-[102%] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[2px] w-21 cursor-pointer bg-zinc-200"
@@ -241,9 +258,9 @@ export function Gt() {
                     <li className="flex items-center justify-center [font-size:13px]">
                       <Link
                         className="relative w-[95px] ml-1 "
-                        to="/GTSagendamento"
+                        to="/SDCprimeiraVia"
                       >
-                        Cadastramento
+                        1° VIA
                       </Link>
                       <BsFillArrowRightCircleFill className="relative" />
                     </li>
@@ -251,19 +268,19 @@ export function Gt() {
                     <li className="flex items-center justify-center [font-size:13px]">
                       <Link
                         className="relative w-[95px] ml-1"
-                        to="/GTScadastramento"
+                        to="/SDCsegundaVia"
+                      >
+                        2° VIA
+                      </Link>
+                      <BsFillArrowRightCircleFill className="relative" />
+                    </li>
+
+                    <li className="flex items-center justify-center [font-size:13px]">
+                      <Link
+                        to="/SDCcancelamento"
+                        className="relative w-[95px] ml-1"
                       >
                         Cancelamento
-                      </Link>
-                      <BsFillArrowRightCircleFill className="relative" />
-                    </li>
-
-                    <li className="flex items-center justify-center [font-size:13px]">
-                      <Link
-                        to="/GTScancelamento/agendamento"
-                        className="relative w-[95px] ml-1"
-                      >
-                        2° via
                       </Link>
                       <BsFillArrowRightCircleFill className="relative" />
                     </li>
@@ -326,57 +343,44 @@ export function Gt() {
               </span>
 
               <span className="flex items-center justify-center [font-size:13px]">
-                <li to="/GTScancelamento/agendamento" className="w-[90px] ml-1">
-                  Estadual***
-                  <ul
-                    id="ulEstadual"
-                    className="hidden absolute left-[102%] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[2px] w-21 cursor-pointer bg-zinc-200"
-                  >
-                    <li className="flex items-center justify-center [font-size:13px]">
-                      <Link
-                        className="relative w-[95px] ml-1 "
-                        to="/GTSagendamento"
-                      >
-                        Cadastramento
-                      </Link>
-                      <BsFillArrowRightCircleFill className="relative" />
-                    </li>
-
-                    <li className="flex items-center justify-center [font-size:13px]">
-                      <Link
-                        className="relative w-[95px] ml-1"
-                        to="/GTScadastramento"
-                      >
-                        Cancelamento
-                      </Link>
-                      <BsFillArrowRightCircleFill className="relative" />
-                    </li>
-
-                    <li className="flex items-center justify-center [font-size:13px]">
-                      <Link
-                        to="/GTScancelamento/agendamento"
-                        className="relative w-[95px] ml-1"
-                      >
-                        2° via
-                      </Link>
-                      <BsFillArrowRightCircleFill className="relative" />
-                    </li>
-                  </ul>
-                </li>
-              </span>
-
-              <span className="flex items-center justify-center [font-size:13px]">
-                <li to="/GTScancelamento/agendamento" className="w-[90px] ml-1">
-                  Federal***
+                <li onClick={estudanteFederal} className="w-[90px] ml-1">
+                  Federal
                   <ul
                     id="ulFederal"
-                    className="hidden absolute left-[102%] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[2px] w-21 cursor-pointer bg-zinc-200"
+                    className="hidden absolute w-[135px] left-[102%] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[2px]  cursor-pointer bg-zinc-200"
                   >
                     <li className="flex items-center justify-center [font-size:13px]">
                       <Link
-                        className="relative w-[95px] ml-1 "
-                        to="/GTSagendamento"
+                        to="/FEDprimeiraVia"
+                        className="relative w-[105px] ml-1 "
                       >
+                        1° via FED
+                      </Link>
+                      <BsFillArrowRightCircleFill className="relative" />
+                    </li>
+
+                    <li className="flex items-center justify-center [font-size:13px]">
+                      <Link
+                        to="/FEDsegundaVia"
+                        className="relative w-[105px] ml-1"
+                      >
+                        2° via FED
+                      </Link>
+                      <BsFillArrowRightCircleFill className="relative" />
+                    </li>
+
+                    <li className="flex items-center justify-center [font-size:13px]">
+                      <Link
+                        to="/FEDatualizarEscola"
+                        className="relative w-[105px] ml-1"
+                      >
+                        Atualizar/escola
+                      </Link>
+                      <BsFillArrowRightCircleFill className="relative" />
+                    </li>
+
+                    <li className="flex items-center justify-center [font-size:13px]">
+                      <Link to="" className="relative w-[105px] ml-1">
                         Cadastramento
                       </Link>
                       <BsFillArrowRightCircleFill className="relative" />
@@ -384,20 +388,10 @@ export function Gt() {
 
                     <li className="flex items-center justify-center [font-size:13px]">
                       <Link
-                        className="relative w-[95px] ml-1"
-                        to="/GTScadastramento"
+                        to="/FEDcancelamento"
+                        className="relative w-[105px] ml-1"
                       >
                         Cancelamento
-                      </Link>
-                      <BsFillArrowRightCircleFill className="relative" />
-                    </li>
-
-                    <li className="flex items-center justify-center [font-size:13px]">
-                      <Link
-                        to="/GTScancelamento/agendamento"
-                        className="relative w-[95px] ml-1"
-                      >
-                        2° via
                       </Link>
                       <BsFillArrowRightCircleFill className="relative" />
                     </li>

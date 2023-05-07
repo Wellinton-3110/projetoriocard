@@ -12,6 +12,7 @@ import { GTEandamento } from "./pages/EspecialPages/GTEandamento";
 import { GTEvencido } from "./pages/EspecialPages/GTEvencido";
 import { GTVagendamentoComAcao } from "./pages/ValeSocialPages/GTVagendamentoComAcao";
 import { GTVagendamentoSemAcao } from "./pages/ValeSocialPages/GTVagendamentoSemAcao";
+import { GTVvencido } from "./pages/ValeSocialPages/GTVvencido";
 import { GTVcadastramento } from "./pages/ValeSocialPages/GTVcadastramento";
 import { GTVcancelamento } from "./pages/ValeSocialPages/GTVcancelamento";
 import { GTVandamento } from "./pages/ValeSocialPages/GTVandamento";
@@ -32,6 +33,13 @@ import { PLUprimeiraVia } from "./pages/EstudantePages/PLUprimeiraVia";
 import { PLUsegundaVia } from "./pages/EstudantePages/PLUsegundaVia";
 import { PLUcancelamento } from "./pages/EstudantePages/PLUcancelamento";
 import { PLUrenovacao } from "./pages/EstudantePages/PLUrenovacao";
+import { SDCprimeiraVia } from "./pages/EstudantePages/SDCprimeiraVia";
+import { SDCsegundaVia } from "./pages/EstudantePages/SDCsegundaVia";
+import { SDCcancelamento } from "./pages/EstudantePages/SDCcancelamento";
+import { FEDprimeiraVia } from "./pages/EstudantePages/FEDprimeiraVia";
+import { FEDsegundaVia } from "./pages/EstudantePages/FEDsegundaVia";
+import { FEDcancelamento } from "./pages/EstudantePages/FEDcancelamento";
+import { FEDatualizarEscola } from "./pages/EstudantePages/FEDatualizarEscola";
 {
   /*--------------------------------------EX------------------------------------------------*/
 }
@@ -39,6 +47,7 @@ import { EXativacaoBui } from "./pages/ExpressoPages/EXativacaoBui";
 import { EXativacaoTsocial } from "./pages/ExpressoPages/EXativacaoTsocial";
 import { EXcancelamento } from "./pages/ExpressoPages/EXcancelamento";
 import { EXcancelamentoDisponivel } from "./pages/ExpressoPages/EXcancelamentoDisponivel";
+import { EXjaCancelado } from "./pages/ExpressoPages/EXjaCancelado";
 import { EXforaPadrao } from "./pages/ExpressoPages/EXforaPadrao";
 import { EXsuspensoSetrans } from "./pages/ExpressoPages/EXsuspensoSetrans";
 import { EXbolsaGerada } from "./pages/ExpressoPages/EXbolsaGerada";
@@ -49,14 +58,16 @@ import { EXrecargaPendente } from "./pages/ExpressoPages/EXrecargaPendente";
 import { EXrecargaPresa } from "./pages/ExpressoPages/EXrecargaPresa";
 import { EXintegracao } from "./pages/ExpressoPages/EXintegracao";
 import { EXnaoIntegracao } from "./pages/ExpressoPages/EXnaoIntegracao";
+
 {
-  /*--------------------------------------------------------------------------------------*/
+  /*-----------------------------------------VT---------------------------------------------*/
 }
 import { VTativacaoBui } from "./pages/ValeTransportePages/VTativacaoBui";
 import { VTativacaoTsocial } from "./pages/ValeTransportePages/VTativacaoTsocial";
 import { VTsuspensoSetrans } from "./pages/ValeTransportePages/VTsuspensoSetrans";
 import { VTcancelamento } from "./pages/ValeTransportePages/VTcancelamento";
 import { VTcancelamentoDisponivel } from "./pages/ValeTransportePages/VTcancelamentoDisponivel";
+import { VTjaCancelado } from "./pages/ValeTransportePages/VTjaCancelado";
 import { VTforaPadrao } from "./pages/ValeTransportePages/VTforaPadrao";
 import { VTbolsaGerada } from "./pages/ValeTransportePages/VTbolsaGerada";
 import { VTbolsaPendente } from "./pages/ValeTransportePages/VTbolsaPendente";
@@ -100,6 +111,7 @@ export function App() {
           path="/GTVagendamentoSemAcao"
           element={<GTVagendamentoSemAcao />}
         />
+        <Route path="/GTVvencido" element={<GTVvencido />} />
         <Route path="/GTVcadastramento" element={<GTVcadastramento />} />
         <Route path="/GTVcancelamento" element={<GTVcancelamento />} />
         <Route path="/GTVandamento" element={<GTVandamento />} />
@@ -118,6 +130,14 @@ export function App() {
         <Route path="/PLUsegundaVia" element={<PLUsegundaVia />} />
         <Route path="/PLUcancelamento" element={<PLUcancelamento />} />
         <Route path="/PLUrenovacao" element={<PLUrenovacao />} />
+        <Route path="/SDCprimeiraVia" element={<SDCprimeiraVia />} />
+        <Route path="/SDCsegundaVia" element={<SDCsegundaVia />} />
+        <Route path="/SDCcancelamento" element={<SDCcancelamento />} />
+        <Route path="/FEDprimeiraVia" element={<FEDprimeiraVia />} />
+        <Route path="/FEDsegundaVia" element={<FEDsegundaVia />} />
+        <Route path="/FEDcancelamento" element={<FEDcancelamento />} />
+        <Route path="/FEDatualizarEscola" element={<FEDatualizarEscola />} />
+
         {/*____________________________EX___________________________*/}
         <Route path="/EXativacaoBui" element={<EXativacaoBui />} />
         <Route path="/EXativacaoTsocial" element={<EXativacaoTsocial />} />
@@ -126,6 +146,7 @@ export function App() {
           path="/EXcancelamentoDisponivel"
           element={<EXcancelamentoDisponivel />}
         />
+        <Route path="/EXjaCancelado" element={<EXjaCancelado />} />
         <Route path="/EXforaPadrao" element={<EXforaPadrao />} />
         <Route path="/EXsuspensoSetrans" element={<EXsuspensoSetrans />} />
         <Route path="/EXbolsaGerada" element={<EXbolsaGerada />} />
@@ -145,6 +166,7 @@ export function App() {
           path="/VTcancelamentoDisponivel"
           element={<VTcancelamentoDisponivel />}
         />
+        <Route path="/VTjaCancelado" element={<VTjaCancelado />} />
         <Route path="/VTforaPadrao" element={<VTforaPadrao />} />
         <Route path="/VTbolsaGerada" element={<VTbolsaGerada />} />
         <Route path="/VTbolsaPendente" element={<VTbolsaPendente />} />

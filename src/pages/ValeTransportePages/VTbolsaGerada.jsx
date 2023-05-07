@@ -4,7 +4,7 @@ import { Footer } from "../../components/Footer";
 
 export function VTbolsaGerada() {
   const title = "Bolsa de Crédito Gerada";
-  const script = `Cliente solicita análise de bolsa de crédito no seu cartão vale transporte, ciente que a bolsa foi gerada e que teria que entrar no site da riocard "para empresas", na parte de pedidos, selecionar a opção de gerenciamento de bolsa de crédito do cartão para a segunda via e efetuar a transferência.`;
+  const script = `Cliente solicita análise de bolsa de crédito no seu cartão vale transporte, ciente que a bolsa foi gerada e que teria que entrar no site da riocard "para empresas", na parte de pedidos, novo pedido de VT e selecionar a opção de gerenciamento de bolsa de crédito do cartão para a segunda via, após isso efetuar a transferência.`;
 
   const path = "INFORMACAO | USUARIO | VT | BOLSA DE CREDITO";
   return (

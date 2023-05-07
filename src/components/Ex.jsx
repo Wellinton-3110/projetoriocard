@@ -137,6 +137,13 @@ export function Ex() {
                 </Link>
                 <BsFillArrowRightCircleFill className="relative ml-2" />
               </li>
+
+              <li className="flex items-center justify-center [font-size:13px]">
+                <Link to="/EXjaCancelado" className="relative w-[95px] ml-1">
+                  Já cancelado
+                </Link>
+                <BsFillArrowRightCircleFill className="relative ml-2" />
+              </li>
             </ul>
           </li>
 

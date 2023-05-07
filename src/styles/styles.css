@@ -15,9 +15,9 @@
   background-image: linear-gradient(
       to top,
       rgba(13, 214, 13, 0.5),
-      rgba(250, 248, 248, 0),
-      rgba(184, 175, 175, 0.13),
-      rgba(202, 236, 199, 0.178)
+      rgba(114, 233, 124, 0.836),
+      rgba(149, 207, 143, 0.363),
+      rgba(199, 225, 236, 0)
     ),
     url("../assets/bgPage2.svg");
 }
@@ -30,10 +30,10 @@
   background-repeat: no-repeat;
   background-image: linear-gradient(
       to bottom,
-      #e62ccdfb,
-      #ffffff7c,
-      #e6e6e633,
-      rgba(218, 76, 194, 0.829)
+      #d31cc42d,
+      #ec008ea2,
+      #c20275d2,
+      #b6026e
     ),
     url("../assets/bgPage2.svg");
 }
@@ -45,11 +45,11 @@
   background-position-y: center;
   background-repeat: no-repeat;
   background-image: linear-gradient(
-      to top,
-      #fdfd17f6,
-      #fdfd1769,
-      rgba(221, 228, 32, 0.082),
-      rgba(235, 220, 220, 0.541)
+      to bottom,
+      #ffe31223,
+      #ffe3127c,
+      #ffe312be,
+      #ffe512
     ),
     url("../assets/bgPage2.svg");
 }
@@ -62,14 +62,15 @@
   background-repeat: no-repeat;
   background-image: linear-gradient(
       to top,
-      rgba(155, 219, 227, 0.705),
-      rgb(253, 252, 252)
+      rgba(40, 192, 212, 0.514),
+      rgba(253, 252, 252, 0.13),
+      rgba(253, 252, 252, 0.11)
     ),
     url("../assets/bgPage2.svg");
 }
 
 .textAp {
-  animation: front 4s alternate infinite;
+  animation: front 2s alternate infinite;
 }
 
 @keyframes front {
@@ -77,7 +78,7 @@
     transform: translateY(1px);
   }
   100% {
-    transform: translateY(3px);
+    transform: translateY(5px);
   }
 }
 
@@ -87,12 +88,12 @@
 
 @keyframes animateCard {
   0% {
-    transform: translateY(580px);
-    border-radius: 210%;
+    transform: translateY(980px);
+    width: 3vw;
   }
 
   100% {
-    transform: translateY(5px);
-    border-radius: 8px;
+    transform: translateY(0);
+    width: 71vw;
   }
 }

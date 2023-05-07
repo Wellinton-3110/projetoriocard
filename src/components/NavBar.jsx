@@ -180,6 +180,16 @@ export function NavBar() {
                       Fora do padrão
                     </Link>
                   </li>
+
+                  <li className="flex items-center justify-center [font-size:13px]">
+                    <BsFillArrowLeftCircleFill className="relative mr-2 " />
+                    <Link
+                      to="/VTjaCancelado"
+                      className="relative w-[95px] ml-1"
+                    >
+                      Já cancelado
+                    </Link>
+                  </li>
                 </ul>
               </li>
 

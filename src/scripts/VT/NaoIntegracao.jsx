@@ -28,7 +28,7 @@ export function NaoIntegracao(props) {
         <div className="flex flex-col items-center justify-center flex-1 h-[100%] ">
           <h1 className="ml-6 font-black [font-size:21px] text-center [letter-spacing:2px] underline [line-height:20px] absolute top-5 tall:absolute tall:top-0 tall:text-[12px] md:text-[14px] sm:text-[12px]">
             {props.title}
-            <h3 className="text-[10px] font-light text-red-700 mt-3 tall:mt-0 animate-bounce no-underline">
+            <h3 className="text-[12px] font-light text-red-700 mt-3 tall:mt-0 animate-bounce no-underline">
               (*Abrir demanda somente com o titular)
             </h3>
           </h1>
@@ -40,7 +40,7 @@ export function NaoIntegracao(props) {
             <br />
             <br />
             <p>Dados para abertura da ocorrência:</p>
-            <div className="flex flex-col text-left font-light text-[11px] [line-height:17px] tall:text-[10px] md:text-[10px] md:text-center sm:text-[7px]">
+            <div className="flex flex-col text-left ml-3 font-light text-[11px] [line-height:17px] tall:[line-height:11px] tall:text-[10px] md:text-[10px] md:text-center sm:text-[7px]">
               <br />
               <br />
               <p>Nome do Usuário:</p>
@@ -70,7 +70,7 @@ export function NaoIntegracao(props) {
               <p>Referencia:</p>
             </div>
           </h2>
-          <h3 className="absolute bottom-4">{props.path}</h3>
+          <h3 className="absolute bottom-4 tall:text-[12px]">{props.path}</h3>
           <span
             className="absolute  animate-pulse bottom-3 right-3 cursor-pointer"
             onClick={() => {
