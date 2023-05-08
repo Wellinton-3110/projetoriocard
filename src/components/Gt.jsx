@@ -13,7 +13,9 @@ import {
   estudanteFederal,
 } from "../functions/function";
 import { Link } from "react-router-dom";
+
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import { AiOutlineCloseCircle } from "react-icons/ai";
 
 export function Gt() {
   return (
@@ -25,7 +27,7 @@ export function Gt() {
         GT
         <ul
           id="ulGT"
-          className="hidden absolute bg-zinc-200 [z-index:2] w-[130px] max-h-[153.5px] cursor-default top-[137%] right-[0] border-[1px] border-[black] p-3 "
+          className="absolute bg-zinc-200 [z-index:2] w-[130px] max-h-[153.5px] cursor-default top-[137%] right-[0] border-[1px] border-[black] p-3 "
           onClick={(e) => e.stopPropagation()}
         >
           <li
@@ -459,10 +461,13 @@ export function Gt() {
           </li>
 
           <li
-            className="hover:border-b-[0.5px] text-black border-black font-light text-[15px] mb-1"
+            className="hover:border-b-[0.5px] flex items-center gap-3 text-black border-black font-light text-[15px] mb-1"
             onClick={bloqueiosMenu}
           >
-            Bloqueios
+            <p>Bloqueios</p>
+            <p className="mt-1 text-[red] ">
+              <AiOutlineCloseCircle />
+            </p>
             <ul
               id="ulBloqueios"
               className=" hidden absolute left-[103%] w-[170px] top-[-1%] border-[1px] border-zinc-700 p-2 pl-[1.5px] space-y-[2px] w-21 cursor-pointer bg-zinc-200"
