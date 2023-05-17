@@ -382,7 +382,10 @@ export function Gt() {
                     </li>
 
                     <li className="flex items-center justify-center [font-size:13px]">
-                      <Link to="" className="relative w-[105px] ml-1">
+                      <Link
+                        to="/FEDcadastramento"
+                        className="relative w-[105px] ml-1"
+                      >
                         Cadastramento
                       </Link>
                       <BsFillArrowRightCircleFill className="relative" />
@@ -439,7 +442,10 @@ export function Gt() {
                     </li>
 
                     <li className="flex items-center justify-center [font-size:13px]">
-                      <Link to="" className="relative w-[105px] ml-1">
+                      <Link
+                        to="/MUcadastramento"
+                        className="relative w-[105px] ml-1"
+                      >
                         Cadastramento
                       </Link>
                       <BsFillArrowRightCircleFill className="relative" />

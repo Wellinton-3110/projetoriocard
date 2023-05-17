@@ -8,15 +8,15 @@
 
 .bgScript {
   background-image: url("../assets/bgPage2.svg");
-  background-size: cover;
+  background-size: 75vw 700px;
   background-position-x: center;
   background-position-y: center;
   background-repeat: no-repeat;
   background-image: linear-gradient(
       to top,
       rgba(13, 214, 13, 0.5),
-      rgba(114, 233, 124, 0.836),
-      rgba(149, 207, 143, 0.363),
+      rgba(114, 233, 124, 0.664),
+      rgba(149, 207, 143, 0.527),
       rgba(199, 225, 236, 0)
     ),
     url("../assets/bgPage2.svg");
@@ -24,32 +24,32 @@
 
 .bgScriptEx {
   background-image: url("../assets/bgPage2.svg");
-  background-size: cover;
+  background-size: 75vw 700px;
   background-position-x: center;
   background-position-y: center;
   background-repeat: no-repeat;
   background-image: linear-gradient(
       to bottom,
-      #d31cc42d,
-      #ec008ea2,
-      #c20275d2,
-      #b6026e
+      #e014cfb9,
+      #ec008e52,
+      #df0c8a88,
+      #ff1ba4fd
     ),
     url("../assets/bgPage2.svg");
 }
 
 .bgScriptVT {
   background-image: url("../assets/bgPage2.svg");
-  background-size: cover;
+  background-size: 75vw 700px;
   background-position-x: center;
   background-position-y: center;
   background-repeat: no-repeat;
   background-image: linear-gradient(
       to bottom,
-      #ffe31223,
-      #ffe3127c,
-      #ffe312be,
-      #ffe512
+      #ffe312b6,
+      #ffe31241,
+      #ffe312e7,
+      #fadd00
     ),
     url("../assets/bgPage2.svg");
 }
@@ -69,7 +69,7 @@
     url("../assets/bgPage2.svg");
 }
 
-.textAp {
+textAp {
   animation: front 2s alternate infinite;
 }
 
@@ -83,7 +83,8 @@
 }
 
 .animateCard {
-  animation: animateCard 0.5s alternate ease-out;
+  animation: animateCard 0.7s alternate ease-out,
+    bgAnimation 2.5s alternate infinite ease-in-out;
 }
 
 @keyframes animateCard {
@@ -95,5 +96,15 @@
   100% {
     transform: translateY(0);
     width: 71vw;
+  }
+}
+
+@keyframes bgAnimation {
+  0% {
+    background-position-y: -15px;
+  }
+
+  100% {
+    background-position-y: 1px;
   }
 }

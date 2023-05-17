@@ -28,6 +28,7 @@ import { GTbiometria } from "./pages/GTbloqueios/GTbiometria";
 import { MUprimeiraVia } from "./pages/EstudantePages/MUprimeiraVia";
 import { MUsegundaVia } from "./pages/EstudantePages/MUsegundaVia";
 import { MUcancelamento } from "./pages/EstudantePages/MUcancelamento";
+import { MUcadastramento } from "./pages/EstudantePages/MUcadastramento";
 import { MUatualizarEscola } from "./pages/EstudantePages/MUatualizarEscola";
 import { PLUprimeiraVia } from "./pages/EstudantePages/PLUprimeiraVia";
 import { PLUsegundaVia } from "./pages/EstudantePages/PLUsegundaVia";
@@ -39,6 +40,7 @@ import { SDCcancelamento } from "./pages/EstudantePages/SDCcancelamento";
 import { FEDprimeiraVia } from "./pages/EstudantePages/FEDprimeiraVia";
 import { FEDsegundaVia } from "./pages/EstudantePages/FEDsegundaVia";
 import { FEDcancelamento } from "./pages/EstudantePages/FEDcancelamento";
+import { FEDcadastramento } from "./pages/EstudantePages/FEDcadastramento";
 import { FEDatualizarEscola } from "./pages/EstudantePages/FEDatualizarEscola";
 {
   /*--------------------------------------EX------------------------------------------------*/
@@ -125,6 +127,7 @@ export function App() {
         <Route path="/MUprimeiraVia" element={<MUprimeiraVia />} />
         <Route path="/MUsegundaVia" element={<MUsegundaVia />} />
         <Route path="/MUcancelamento" element={<MUcancelamento />} />
+        <Route path="/MUcadastramento" element={<MUcadastramento />} />
         <Route path="/MUatualizarEscola" element={<MUatualizarEscola />} />
         <Route path="/PLUprimeiraVia" element={<PLUprimeiraVia />} />
         <Route path="/PLUsegundaVia" element={<PLUsegundaVia />} />
@@ -136,6 +139,7 @@ export function App() {
         <Route path="/FEDprimeiraVia" element={<FEDprimeiraVia />} />
         <Route path="/FEDsegundaVia" element={<FEDsegundaVia />} />
         <Route path="/FEDcancelamento" element={<FEDcancelamento />} />
+        <Route path="/FEDcadastramento" element={<FEDcadastramento />} />
         <Route path="/FEDatualizarEscola" element={<FEDatualizarEscola />} />
 
         {/*____________________________EX___________________________*/}
