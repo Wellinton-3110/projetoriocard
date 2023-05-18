@@ -9,8 +9,8 @@ export function Home() {
     <div onClick={hideAllMenus} className="w-full h-[73vh] bg-white/10 flex">
       <div className="bgHome w-[83vw] h-[67.5vh] m-auto text-center border-[3px] border-t-[1px] relative border-black/90 rounded-md p-3">
         {/*------------------------------------###-----------------------------------------*/}
-        <div className="flex items-center mt-7 justify-center [font-size:26px] tall:text-[21px]">
-          <h1 className="md:text-[15px] ml-6 textAp [line-height:40px] [letter-spacing:1px]">
+        <div className="flex items-center mt-20 justify-center [font-size:26px] tall:text-[21px]">
+          <h1 className="myFont md:text-[15px] ml-6 textAp  [line-height:40px] [letter-spacing:1px]">
             Olá
             <br className="" /> seja bem vindo(a) ao site de Scripts Riocard,
             escolha o script que deseja nos menus acima
@@ -22,7 +22,7 @@ export function Home() {
         </div>
         {/*-----------------------------------###-----------------------------------------*/}
 
-        <footer className="md:text-[15px] textAp relative mt-5 [font-size:22px] [letter-spacing:2px] tall:text-[17px]">
+        <footer className="mySubFont md:text-[15px] textAp relative mt-5 tall:text-[17px]">
           ...
           <br />
           <br />

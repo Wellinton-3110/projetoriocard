@@ -5,6 +5,7 @@ import { HomePath } from "./HomePath";
 import { Gt } from "./Gt";
 import { Ex } from "./Ex";
 import { Link } from "react-router-dom";
+import { Login } from "./Login";
 import {
   hideBuiVT,
   hideVT,
@@ -15,7 +16,6 @@ import {
   hideRecargasVT,
 } from "../functions/function";
 
-import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import { BsFillArrowLeftCircleFill } from "react-icons/bs";
 
 export function NavBar() {
@@ -28,7 +28,11 @@ export function NavBar() {
         alt=""
         className="LogoBar w-17 h-10 relative left-[7vw]"
       />
-
+      {nome === "/projectriocard/" || nome === "/projectriocard" ? (
+        <Login />
+      ) : (
+        ""
+      )}
       {/*-----------------------------------------------------------HOME-----------------------------------------------------------*/}
       {nome === "/projectriocard/" || nome === "/projectriocard" ? (
         ""
