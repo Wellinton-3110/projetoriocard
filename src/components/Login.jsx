@@ -31,7 +31,7 @@ export function Login() {
                 <div>
                   <Form.Label className="FormLabel">Login</Form.Label>
                   <Form.Message
-                    className="FormMessage text-black"
+                    className="FormMessage text-red-400 text-[10px] ml-5"
                     match="valueMissing"
                   >
                     Preencha o seu login
@@ -39,19 +39,34 @@ export function Login() {
                 </div>
 
                 <Form.Control asChild>
-                  <input id="login" name="login" type="text" required />
+                  <input
+                    className="rounded-md w-[15vw]"
+                    id="login"
+                    name="login"
+                    type="text"
+                    required
+                  />
                 </Form.Control>
               </Form.Field>
 
               <Form.Field className="FormField">
                 <div className="">
                   <Form.Label className="FormLabel">Senha</Form.Label>
-                  <Form.Message className="FormMessage" match="valueMissing">
+                  <Form.Message
+                    className="FormMessage text-red-400 text-[10px] ml-5"
+                    match="valueMissing"
+                  >
                     Digite a senha
                   </Form.Message>
                 </div>
                 <Form.Control asChild>
-                  <input id="senha" name="senha" type="text" required />
+                  <input
+                    className="rounded-md w-[15vw]"
+                    id="senha"
+                    name="senha"
+                    type="text"
+                    required
+                  />
                 </Form.Control>
               </Form.Field>
 
