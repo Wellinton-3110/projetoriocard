@@ -21,26 +21,29 @@ export function Login() {
         </Dialog.Trigger>
         <Dialog.Portal>
           <Dialog.Overlay />
-          <Dialog.Content className="bg-black/10 w-[100vw] h-[100vh] absolute top-0 left-0">
+          <Dialog.Content className="bg-black/20 w-[100vw] h-[100vh] absolute top-0 left-0">
             <Form.Root
               onSubmit={getData}
-              className="FormRoot w-[25vw] h-[45vh] p-5 text-center rounded-lg absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-60%] bg-slate-400"
+              className="FormRoot w-[25vw] h-[39vh] absolute p-5 flex flex-col items-center text-center rounded-md  top-1/2 left-1/2 translate-x-[-50%] translate-y-[-60%] bg-slate-500"
             >
-              <Dialog.Title className="DialogTitle ">ACESSO</Dialog.Title>
-              <Form.Field className="FormField">
-                <div>
-                  <Form.Label className="FormLabel">Login</Form.Label>
+              <Dialog.Title className="DialogTitle h-8 w-[25vw] absolute top-0 flex items-center justify-center rounded-t-md bg-slate-400 ">
+                <p>ACESSO</p>
+              </Dialog.Title>
+              <Form.Field name="login" className="FormField flex flex-col mt-6">
+                <div className="flex items-center w-[18vw]  mb-1 relative">
+                  <Form.Label className="FormLabel text-left ">
+                    Login
+                  </Form.Label>
                   <Form.Message
-                    className="FormMessage text-red-400 text-[10px] ml-5"
+                    className="FormMessage text-red-500 text-[9px] absolute right-0"
                     match="valueMissing"
                   >
                     Preencha o seu login
                   </Form.Message>
                 </div>
-
                 <Form.Control asChild>
                   <input
-                    className="rounded-md w-[15vw]"
+                    className="rounded-md w-[18vw] h-7"
                     id="login"
                     name="login"
                     type="text"
@@ -49,11 +52,11 @@ export function Login() {
                 </Form.Control>
               </Form.Field>
 
-              <Form.Field className="FormField">
-                <div className="">
-                  <Form.Label className="FormLabel">Senha</Form.Label>
+              <Form.Field name="senha" className="FormField mt-1">
+                <div className="flex items-center w-[18vw] mb-1 relative">
+                  <Form.Label className="FormLabel text-left">Senha</Form.Label>
                   <Form.Message
-                    className="FormMessage text-red-400 text-[10px] ml-5"
+                    className="FormMessage text-red-500 text-[9px] absolute right-0"
                     match="valueMissing"
                   >
                     Digite a senha
@@ -61,23 +64,31 @@ export function Login() {
                 </div>
                 <Form.Control asChild>
                   <input
-                    className="rounded-md w-[15vw]"
+                    className="rounded-md w-[18vw] h-7"
                     id="senha"
                     name="senha"
-                    type="text"
+                    type="password"
                     required
                   />
                 </Form.Control>
               </Form.Field>
 
-              <div className="flex gap-3 justify-center mt-2">
+              <div className="flex flex-col justify-center items-center gap-2 justify-center mt-3 mb-1 p-1 border-black/70 border-b-[1px] ">
                 <Form.Submit>
-                  <button className="Button">acessar</button>
+                  <button className="Button w-[18vw] h-7 bg-zinc-300 hover:bg-zinc-400 rounded-md">
+                    acessar
+                  </button>
                 </Form.Submit>
-                <Link>cadastro</Link>
+                <Link className="text-[12px] w-[90px] text-blue-400 hover:underline">
+                  esqueci a senha
+                </Link>
               </div>
+
+              <Link className="w-[11vw] text-[14px] mt-4 bg-zinc-300 hover:bg-zinc-400 rounded-md">
+                cadastre-se
+              </Link>
             </Form.Root>
-            <Dialog.Close className="absolute w-8 h-8 top-10 bg-red-500 right-5 rounded-[40%]">
+            <Dialog.Close className="absolute w-6 h-6 top-10 bg-red-600 right-10 rounded-[50%]">
               <button>X</button>
             </Dialog.Close>
           </Dialog.Content>
