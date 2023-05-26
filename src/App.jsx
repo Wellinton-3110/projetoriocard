@@ -80,11 +80,14 @@ import { VTrecargaEfetuada } from "./pages/ValeTransportePages/VTrecargaEfetuada
 import { VTrecargaPendente } from "./pages/ValeTransportePages/VTrecargaPendente";
 import { VTrecargaPresa } from "./pages/ValeTransportePages/VTrecargaPresa";
 
+import { Cadastro } from "./components/Cadastro";
+
 export function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route exact path="/projectriocard/" element={<HomePage />} />
+        <Route path="/Cadastro" element={<Cadastro />} />
         {/*____________________________GT___________________________*/}
         <Route path="/GTScadastramento" element={<GTScadastramento />} />
         <Route path="/GTSagendamento" element={<GTSagendamento />} />

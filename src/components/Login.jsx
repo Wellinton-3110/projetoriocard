@@ -73,7 +73,7 @@ export function Login() {
                 </Form.Control>
               </Form.Field>
 
-              <div className="flex flex-col justify-center items-center gap-2 justify-center mt-3 mb-1 p-1 border-black/70 border-b-[1px] ">
+              <div className="flex flex-col justify-center items-center gap-2 mt-3 mb-1 p-1 border-black/70 border-b-[1px] ">
                 <Form.Submit>
                   <button className="Button w-[18vw] h-7 bg-zinc-300 hover:bg-zinc-400 rounded-md">
                     acessar
@@ -84,7 +84,10 @@ export function Login() {
                 </Link>
               </div>
 
-              <Link className="w-[11vw] text-[14px] mt-4 bg-zinc-300 hover:bg-zinc-400 rounded-md">
+              <Link
+                to="/Cadastro"
+                className="w-[11vw] text-[14px] mt-4 bg-zinc-300 hover:bg-zinc-400 rounded-md"
+              >
                 cadastre-se
               </Link>
             </Form.Root>
