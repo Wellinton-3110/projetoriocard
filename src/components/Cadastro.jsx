@@ -1,9 +1,18 @@
+import { useState, useEffect } from "react";
 import * as Form from "@radix-ui/react-form";
 import "../styles/index.css";
 import "../styles/styles.css";
+import axios from "axios";
 
 export function Cadastro() {
-  function sendUser(e) {
+  const [users, setUsers] = useState([]);
+  useEffect(() => {
+    axios("https://novoappi.herokuapp.com/usuarios").then((r) => {
+      return setUsers(r.data);
+    });
+  }, []);
+
+  async function sendUser(e) {
     const nome = document.getElementById("nome");
     const email = document.getElementById("email");
     const login = document.getElementById("login");
@@ -11,6 +20,16 @@ export function Cadastro() {
     e.preventDefault();
     const getData = new FormData(e.target);
     const data = Object.fromEntries(getData);
+    users.map((user) => {
+      console.log(user.nome);
+    });
+    await axios.post("https://novoappi.herokuapp.com/usuarios", {
+      nome: data.nome,
+      email: data.email,
+      login: data.login,
+      senha: data.senha,
+    });
+
     console.log(data);
     alert("Cadastro realizado com sucesso");
     nome.value = "";
@@ -18,6 +37,7 @@ export function Cadastro() {
     login.value = "";
     senha.value = "";
   }
+
   return (
     <div className="w-[100vw] h-[100vh] bg-black/40 flex items-center justify-center">
       <Form.Root
