@@ -21,13 +21,14 @@ export function Gt() {
   return (
     <ul className="flex items-center justify-center p-2 w-[15vw]">
       <li
-        className="relative border-solid border-[2px] cursor-pointer border-[#9c3] bg-white p-[5px] rounded-[21%] text-[#00d99d] text-[27px] font-medium hover:border-[3px]"
+        className="relative h-[47px] w-[53px] flex items-center justify-center border-solid border-[2px] cursor-pointer border-[#9c3] bg-white p-[5px] rounded-[4%] text-[#00d99d] text-[29px] text-center font-medium hover:border-[3px]"
         onClick={hideGT}
       >
-        GT
+        <p>GT</p>
+
         <ul
           id="ulGT"
-          className="hidden absolute bg-zinc-200 [z-index:2] w-[130px] max-h-[153.5px] cursor-default top-[137%] right-[0] border-[1px] border-[black] p-3 "
+          className="hidden text-left absolute bg-zinc-200 [z-index:2] w-[130px] max-h-[153.5px] cursor-default top-[137%] right-[0] border-[1px] border-[black] p-3 "
           onClick={(e) => e.stopPropagation()}
         >
           <li

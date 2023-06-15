@@ -17,11 +17,11 @@ export function Ex() {
       className="flex items-center justify-center p-2 w-[15vw]"
       onClick={hideEX}
     >
-      <li className="relative cursor-pointer border-solid border-[2px] border-[#ec008c] bg-white p-[5px] rounded-[21%] text-[#ff089cfe] text-[27px] font-medium hover:border-[3px]">
-        EX
+      <li className="relative h-[47px] w-[53px] flex items-center justify-center cursor-pointer border-solid border-[2px] border-[#ec008c] bg-white p-[5px] rounded-[4%] text-[#ff089cfe] text-[29px] font-medium hover:border-[3px]">
+        <p>EX</p>
         <ul
           id="ulEX"
-          className="hidden absolute bg-zinc-200 [z-index:2] w-[145px] max-h-[205.5px] cursor-default top-[137%] right-0 border-[1px] border-[black] p-3 font-light text-[15px]"
+          className="hidden text-left absolute bg-zinc-200 [z-index:2] w-[145px] max-h-[205.5px] cursor-default top-[137%] right-0 border-[1px] border-[black] p-3 font-light text-[15px]"
           onClick={(e) => e.stopPropagation()}
         >
           <li

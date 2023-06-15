@@ -49,11 +49,11 @@ export function NavBar() {
           onClick={hideVT}
           className="flex items-center justify-center p-2 w-[15vw]"
         >
-          <li className="border-solid absolute border-[2px] border-[#f37032] bg-white p-[5px] cursor-pointer rounded-[21%] text-[#f37032] text-[27px] font-medium hover:border-[3px]">
-            VT
+          <li className="border-solid absolute h-[47px] w-[53px] flex items-center justify-center border-[2px] border-[#f37032] bg-white p-[5px] cursor-pointer rounded-[4%] text-[#f37032] text-[29px] text-center font-medium hover:border-[3px]">
+            <p>VT</p>
             <ul
               id="ulVT"
-              className="hidden absolute bg-zinc-200 [z-index:2] w-[140px] max-h-[193.5px] cursor-default top-[144%] right-0 border-[1px] border-[black] p-3 font-light text-[15px]"
+              className="hidden text-left absolute bg-zinc-200 [z-index:2] w-[140px] max-h-[193.5px] cursor-default top-[144%] right-0 border-[1px] border-[black] p-3 font-light text-[15px]"
               onClick={(e) => e.stopPropagation()}
             >
               <li
