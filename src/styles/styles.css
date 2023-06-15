@@ -35,16 +35,16 @@
 
 .bgScriptEx {
   background-image: url("../assets/bgPage2.svg");
-  background-size: 100vw 70vh;
+  background-size: 100vw 77vh;
   background-position-x: center;
   background-position-y: center;
   background-repeat: no-repeat;
   background-image: linear-gradient(
       to bottom,
-      #e014cfb9,
-      #ec008e52,
-      #df0c8a88,
-      #ff1ba4fd
+      #c206c2,
+      #cf09b5d3,
+      #d80bb6e5,
+      #c206c2
     ),
     url("../assets/bgPage2.svg");
 }
@@ -112,10 +112,10 @@ textAp {
 
 @keyframes bgAnimation {
   0% {
-    background-position-y: -15px;
+    background-position-y: -31px;
   }
 
   100% {
-    background-position-y: 1px;
+    background-position-y: 0px;
   }
 }

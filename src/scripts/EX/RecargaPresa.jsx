@@ -24,7 +24,7 @@ export function RecargaPresa(props) {
   }
   return (
     <div className="w-full h-[75.5vh] flex items-center justify-center overflow-hidden">
-      <div className="animateCard bgScriptEx overflow-hidden flex flex-col relative w-[75vw] h-[69vh] m-auto text-center border-4 border-t-[1px] border-b-[8px] border-r-[5px] border-l-[6px] border-black/80 rounded-lg p-3 sm:h-[590px] md:h-[590px] sm:w-[350px] tall:h-[67vh]">
+      <div className="animateCard bgScriptEx overflow-hidden flex flex-col relative w-[75vw] h-[71vh] m-auto text-center border-t-[1px] border-b-[2px] border-r-[3px] border-l-[4.5px] border-black/80 rounded-lg p-3 sm:h-[590px] md:h-[590px] sm:w-[350px] tall:h-[67vh]">
         <div className="flex flex-col items-center justify-center flex-1 h-[100%] ">
           <h1 className="ml-6 font-black [font-size:21px] text-center [letter-spacing:2px] underline [line-height:20px] absolute top-4 tall:absolute tall:top-0 tall:text-[12px] md:text-[14px] sm:text-[12px]">
             {props.title}
@@ -88,7 +88,7 @@ export function RecargaPresa(props) {
               copy();
             }}
           >
-            <AiOutlineCopy className="w-7 h-7" />
+            <AiOutlineCopy className="w-9 h-9" />
           </span>
         </div>
       </div>

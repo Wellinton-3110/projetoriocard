@@ -13,25 +13,31 @@ export function Cadastro() {
   }, []);
 
   async function sendUser(e) {
+    e.preventDefault();
     const nome = document.getElementById("nome");
     const email = document.getElementById("email");
     const login = document.getElementById("login");
     const senha = document.getElementById("senha");
-    e.preventDefault();
+
+    for (const user of users) {
+      if (user.login === login.value) {
+        alert(
+          "Login já existente na base de dados, por favor escolha um login diferente"
+        );
+        return; // Sair da função sendUser
+      }
+    }
+
     const getData = new FormData(e.target);
     const data = Object.fromEntries(getData);
-    users.map((user) => {
-      console.log(user.nome);
-    });
-    await axios.post("https://novoappi.herokuapp.com/usuarios", {
+
+    axios.post("https://novoappi.herokuapp.com/usuarios", {
       nome: data.nome,
       email: data.email,
       login: data.login,
       senha: data.senha,
     });
 
-    console.log(data);
-    alert("Cadastro realizado com sucesso");
     nome.value = "";
     email.value = "";
     login.value = "";
