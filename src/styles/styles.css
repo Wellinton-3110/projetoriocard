@@ -8,12 +8,13 @@
 
 .myFont {
   font-family: "Lilita One", cursive;
-  font-size: 23px;
-  letter-spacing: 2px;
+  font-size: 28px;
+  letter-spacing: 1px;
+  text-decoration: underline;
 }
 .mySubFont {
   font-family: "Lilita One", cursive;
-  font-size: 19px;
+  font-size: 21px;
   letter-spacing: 1px;
 }
 
@@ -51,16 +52,16 @@
 
 .bgScriptVT {
   background-image: url("../assets/bgPage2.svg");
-  background-size: 100vw 70vh;
+  background-size: 100vw 77vh;
   background-position-x: center;
   background-position-y: center;
   background-repeat: no-repeat;
   background-image: linear-gradient(
       to bottom,
+      #ffe312ce,
       #ffe312b6,
-      #ffe31241,
-      #ffe312e7,
-      #fadd00
+      #ffe312da,
+      #ddc300
     ),
     url("../assets/bgPage2.svg");
 }

@@ -23,7 +23,7 @@ export function Integracao(props) {
     window.getSelection().removeAllRanges();
   }
   return (
-    <div className="w-full h-[75.5vh] flex items-center justify-center overflow-hidden">
+    <div className="w-full h-[75vh] flex items-center justify-center overflow-hidden">
       <div className="animateCard bgScriptEx overflow-hidden flex flex-col relative w-[75vw] h-[71vh] m-auto text-center border-t-[1px] border-b-[2px] border-r-[3px] border-l-[4.5px] border-black/80 rounded-lg p-3 sm:h-[590px] md:h-[590px] sm:w-[350px] tall:h-[65vh]">
         <div className="flex flex-col items-center justify-center flex-1 ">
           <h1 className="ml-6 font-black [font-size:25px] [letter-spacing:1px] underline [line-height:40px] absolute top-5">

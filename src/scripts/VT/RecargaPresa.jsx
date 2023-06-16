@@ -23,18 +23,18 @@ export function RecargaPresa(props) {
     window.getSelection().removeAllRanges();
   }
   return (
-    <div className="w-full h-[75.5vh] flex items-center justify-center overflow-hidden">
-      <div className="animateCard bgScriptVT overflow-hidden flex flex-col relative w-[75vw] h-[69vh] m-auto text-center border-4 border-t-[1px] border-b-[8px] border-r-[5px] border-l-[6px] border-black/90 rounded-lg p-3 sm:h-[590px] md:h-[590px] sm:w-[350px] tall:h-[67vh]">
+    <div className="w-full h-[75vh] flex items-center justify-center overflow-hidden">
+      <div className="animateCard bgScriptVT overflow-hidden flex flex-col relative w-[75vw] h-[71vh] m-auto text-center border-t-[1px] border-b-[2px] border-r-[3px] border-l-[4.5px] border-black/80 rounded-lg p-3 sm:h-[590px] md:h-[590px] sm:w-[350px] tall:h-[67vh]">
         <div className="flex flex-col items-center justify-center flex-1 h-[100%] ">
           <h1 className="ml-6 font-black [font-size:21px] text-center [letter-spacing:2px] underline [line-height:20px] absolute top-4 tall:absolute tall:top-0 tall:text-[12px] md:text-[14px] sm:text-[12px]">
             {props.title}
-            <h3 className="text-[12px] font-light text-red-700 mt-3 tall:mt-0 animate-bounce no-underline">
+            <h3 className="text-[14px] font-light text-red-600 mt-3 tall:mt-0 animate-bounce no-underline">
               (*Abrir demanda somente com o titular)
             </h3>
           </h1>
           <h2
             id="copy"
-            className="absolute top-[8vh] font-bold [font-size:12px] [letter-spacing:3px] w-[750px] sm:w-[230px] sm:font-normal md:w-[330px] tall:text-[10px] md:text-[10px] sm:text-[8px]"
+            className="absolute top-[8vh] font-bold [font-size:12px] [letter-spacing:1px] w-[750px] sm:w-[230px] sm:font-normal md:w-[330px] tall:text-[10px] md:text-[10px] sm:text-[8px]"
           >
             <div className="">
               {props.script}
@@ -88,7 +88,7 @@ export function RecargaPresa(props) {
               copy();
             }}
           >
-            <AiOutlineCopy className="w-7 h-7" />
+            <AiOutlineCopy className="w-9 h-9" />
           </span>
         </div>
       </div>
