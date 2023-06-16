@@ -11,9 +11,9 @@ export function Footer() {
         />
       </div>
 
-      <div className="flex-1 ml-2 tall:text-[11px]">
-        <h1 className="mt-2 underline">Sistemas</h1>
-        <ul className="flex flex-col gap-1 mt-2 max-w-[100px] tall:mt-0 ">
+      <div className="flex-1 overflow-hidden ml-2 tall:text-[11px]">
+        <h1 className="mt-1 underline">Sistemas</h1>
+        <ul className="flex flex-col gap-[2px] mt-1 max-w-[75px] tall:mt-0 ">
           <a
             href="http://callcenter.riocard.com/index.asp"
             target="_blank"
