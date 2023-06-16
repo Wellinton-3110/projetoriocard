@@ -96,18 +96,20 @@ textAp {
 
 .animateCard {
   animation: animateCard 0.7s alternate ease-out,
-    bgAnimation 2.5s alternate infinite ease-in-out;
+    bgAnimation 1.7s alternate infinite ease-in-out;
 }
 
 @keyframes animateCard {
   0% {
-    transform: translateY(980px);
-    width: 3vw;
+    transform: translateX(2700px);
+    height: 5vh;
+    border-radius: 70%;
   }
 
   100% {
-    transform: translateY(0);
-    width: 71vw;
+    transform: translateX(0);
+    height: 70vh;
+    border-radius: 8px;
   }
 }
 
