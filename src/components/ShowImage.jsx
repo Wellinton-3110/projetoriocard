@@ -23,6 +23,7 @@ export function ShowImage(props) {
           backgroundColor: "transparent",
           borderRadius: "8px",
           padding: "10px",
+          marginBottom: "10px",
         }}
       >
         <ul style={{ margin: "0px" }}> {dots} </ul>
@@ -54,7 +55,7 @@ export function ShowImage(props) {
           <Dialog.Title>{props.title}</Dialog.Title>
           <Slider
             {...settings}
-            className="absolute m-auto w-[95vw] h-[95vh] top-5 "
+            className="absolute m-auto w-[87vw] h-[95vh] top-5 "
             onClick={(e) => e.stopPropagation()}
           >
             <div className="relative h-[95vh] w-5">
