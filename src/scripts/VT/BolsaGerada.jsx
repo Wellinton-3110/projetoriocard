@@ -1,5 +1,7 @@
 import "../../styles/index.css";
 import "../../styles/styles.css";
+import { ShowImage } from "../../components/ShowImage";
+import bolsa1 from "../../assets/bolsa1.png";
 import { AiOutlineCopy } from "react-icons/ai";
 
 export function BolsaGerada(props) {
@@ -47,6 +49,9 @@ export function BolsaGerada(props) {
             }}
           >
             <AiOutlineCopy className="w-9 h-9" />
+          </span>
+          <span className="absolute  bottom-1 right-12 cursor-pointer">
+            <ShowImage className="w-9 h-9" image1={bolsa1} />
           </span>
         </div>
       </div>

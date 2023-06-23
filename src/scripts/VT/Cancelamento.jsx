@@ -49,7 +49,7 @@ export function Cancelamento(props) {
           </h2>
           <h3 className="absolute bottom-4">{props.path}</h3>
           <span
-            className="absolute  animate-pulse bottom-3 right-3 cursor-pointer"
+            className="absolute flex animate-pulse bottom-3 right-3 cursor-pointer"
             onClick={() => {
               copy();
             }}

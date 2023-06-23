@@ -42,10 +42,10 @@
   background-repeat: no-repeat;
   background-image: linear-gradient(
       to bottom,
-      #a103a1e3,
-      #a80492b6,
-      #c005a1ec,
-      #8d038dee
+      #ce1fceef,
+      #c906afe0,
+      #c41aa8ee,
+      #c008c0ee
     ),
     url("../assets/bgPage2.svg");
 }

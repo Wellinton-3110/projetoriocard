@@ -1,5 +1,6 @@
 import { HomePage } from "./pages/HomePage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import { GTScadastramento } from "./pages/SeniorPages/GTScadastramento";
 import { GTSagendamento } from "./pages/SeniorPages/GTSagendamento";
 import { GTScancelamentoAgendado } from "./pages/SeniorPages/GTScancelamentoAgendado";
@@ -79,7 +80,6 @@ import { VTnaoIntegracao } from "./pages/ValeTransportePages/VTnaoIntegracao";
 import { VTrecargaEfetuada } from "./pages/ValeTransportePages/VTrecargaEfetuada";
 import { VTrecargaPendente } from "./pages/ValeTransportePages/VTrecargaPendente";
 import { VTrecargaPresa } from "./pages/ValeTransportePages/VTrecargaPresa";
-
 import { Cadastro } from "./components/Cadastro";
 
 export function App() {
