@@ -1,6 +1,15 @@
+import { Show7Image } from "../../components/Show7Image";
+import { AiOutlineCopy } from "react-icons/ai";
 import "../../styles/index.css";
 import "../../styles/styles.css";
-import { AiOutlineCopy } from "react-icons/ai";
+
+import ativacao from "../../assets/VT/bui/ativacao.png";
+import ativacao2 from "../../assets/VT/bui/ativacao2.png";
+import ativacao3 from "../../assets/VT/bui/ativacao3.png";
+import ativacao4 from "../../assets/VT/bui/ativacao4.png";
+import ativacao5 from "../../assets/VT/bui/ativacao5.png";
+import ativacao6 from "../../assets/VT/bui/ativacao6.png";
+import ativacao7 from "../../assets/VT/bui/ativacao7.png";
 
 export function AtivacaoBui(props) {
   async function copy() {
@@ -47,6 +56,18 @@ export function AtivacaoBui(props) {
             }}
           >
             <AiOutlineCopy className="w-9 h-9" />
+          </span>
+          <span className="absolute  bottom-1 right-12 cursor-pointer">
+            <Show7Image
+              className="w-9 h-9"
+              image1={ativacao}
+              image2={ativacao2}
+              image3={ativacao3}
+              image4={ativacao4}
+              image5={ativacao5}
+              image6={ativacao6}
+              image7={ativacao7}
+            />
           </span>
         </div>
       </div>

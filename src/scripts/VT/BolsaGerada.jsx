@@ -1,7 +1,11 @@
 import "../../styles/index.css";
 import "../../styles/styles.css";
-import { ShowImage } from "../../components/ShowImage";
-import bolsa1 from "../../assets/bolsa1.png";
+import { Show4Image } from "../../components/Show4Image";
+import bolsa1 from "../../assets/VT/bolsa1.png";
+import bolsaVt2 from "../../assets/VT/bolsaVt2.png";
+import bolsaVt3 from "../../assets/VT/bolsaVt3.png";
+import bolsaVt4 from "../../assets/VT/bolsaVt4.png";
+
 import { AiOutlineCopy } from "react-icons/ai";
 
 export function BolsaGerada(props) {
@@ -51,7 +55,13 @@ export function BolsaGerada(props) {
             <AiOutlineCopy className="w-9 h-9" />
           </span>
           <span className="absolute  bottom-1 right-12 cursor-pointer">
-            <ShowImage className="w-9 h-9" image1={bolsa1} />
+            <Show4Image
+              className="w-9 h-9"
+              image1={bolsa1}
+              image2={bolsaVt2}
+              image3={bolsaVt3}
+              image4={bolsaVt4}
+            />
           </span>
         </div>
       </div>

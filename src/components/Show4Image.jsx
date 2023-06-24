@@ -1,16 +1,12 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import { FcImageFile } from "react-icons/fc";
-import bolsa1 from "../assets/bolsa1.png";
-import bolsaVt2 from "../assets/bolsaVt2.png";
-import bolsaVt3 from "../assets/bolsaVt3.png";
-import bolsaVt4 from "../assets/bolsaVt4.png";
 import Slider from "react-slick";
 
 import "../styles/index.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-export function ShowImage(props) {
+export function Show4Image(props) {
   var settings = {
     dots: true,
     infinite: true,
@@ -62,29 +58,29 @@ export function ShowImage(props) {
               <img
                 src={props.image1}
                 alt=""
-                className="relative h-[75vh] w-[95vw] top-[9vh] left-3"
+                className="relative h-[85vh] w-[100%] top-[5vh] left-3"
               />
             </div>
 
             <div className="relative h-[95vh] w-5 ">
               <img
-                src={bolsaVt2}
+                src={props.image2}
                 alt=""
-                className="relative h-[75vh] w-[95vw] top-[9vh] left-3"
+                className="relative h-[85vh] w-[95vw] top-[5vh] left-3"
               />
             </div>
             <div className="relative h-[95vh] w-5 ">
               <img
-                src={bolsaVt3}
+                src={props.image3}
                 alt=""
-                className="relative h-[75vh] w-[95vw] top-[9vh] left-3"
+                className="relative h-[85vh] w-[95vw] top-[5vh] left-3"
               />
             </div>
             <div className="relative h-[95vh] w-5 ">
               <img
-                src={bolsaVt4}
+                src={props.image4}
                 alt=""
-                className="relative h-[75vh] w-[95vw] top-[9vh] left-3"
+                className="relative h-[85vh] w-[95vw] top-[5vh] left-3"
               />
             </div>
           </Slider>

@@ -1,6 +1,12 @@
+import { AiOutlineCopy } from "react-icons/ai";
+import { Show4Image } from "../../components/Show4Image";
+
 import "../../styles/index.css";
 import "../../styles/styles.css";
-import { AiOutlineCopy } from "react-icons/ai";
+import disponivel from "../../assets/EX/cancelamento/disponivel.png";
+import disponivel2 from "../../assets/EX/cancelamento/disponivel2.png";
+import disponivel3 from "../../assets/EX/cancelamento/disponivel3.png";
+import disponivel4 from "../../assets/EX/cancelamento/disponivel4.png";
 
 export function CancelamentoDisponivel(props) {
   async function copy() {
@@ -47,6 +53,15 @@ export function CancelamentoDisponivel(props) {
             }}
           >
             <AiOutlineCopy className="w-9 h-9" />
+          </span>
+          <span className="absolute  bottom-1 right-12 cursor-pointer">
+            <Show4Image
+              className="w-9 h-9"
+              image1={disponivel}
+              image2={disponivel2}
+              image3={disponivel3}
+              image4={disponivel4}
+            />
           </span>
         </div>
       </div>
