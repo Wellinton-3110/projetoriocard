@@ -17,6 +17,7 @@ import {
 } from "../functions/function";
 
 import { BsFillArrowLeftCircleFill } from "react-icons/bs";
+import { AppPhone } from "./AppPhone";
 
 export function NavBar() {
   const nome = window.location.pathname;
@@ -41,7 +42,8 @@ export function NavBar() {
       )}
       {/*-----------------------------------------------------------Right Menu-----------------------------------------------------------*/}
 
-      <div className="#MenuBar flex max-h-[43px] max-w-[230px] relative right-[6vw] sm:right-[22%] md:right-[28%] p-3">
+      <div className="#MenuBar flex max-h-[43px]  max-w-[330px] relative right-[6vw] sm:right-[22%] md:right-[28%] p-3">
+        <AppPhone />
         <Gt />
         <Ex />
 
