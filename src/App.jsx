@@ -86,7 +86,7 @@ export function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/projectriocard/" element={<HomePage />} />
+        <Route exact path="/projetoriocard/" element={<HomePage />} />
         <Route path="/Cadastro" element={<Cadastro />} />
         {/*____________________________GT___________________________*/}
         <Route path="/GTScadastramento" element={<GTScadastramento />} />
